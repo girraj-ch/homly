@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+
+        <!DOCTYPE html>
+        <html lang="en">
+        
+        <head>
+        
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <meta name="description" content="">
+            <meta name="author" content="Homly">
+        
+            <title>Homly - Admin Dashboard</title>
+        
+            <!-- Custom fonts for homly-->
+            <link href="../assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+            
+            <!-- Custom styles for homly-->
+            <link href="../assets/css/homly.css" rel="stylesheet">
+            <link href="../assets/css/jquery.bs4-scrolling-tabs.css" rel="stylesheet">
+        </head>
+        
+        <body id="page-top" class="sidebar-toggled">
+        
+            <!-- Page Wrapper -->
+            <div id="wrapper" class="pages">
+        
+                <!-- Sidebar -->
+                <!-- Sidebar -->
+                <ul class="navbar-nav  sidebar sidebar-dark accordion toggled" id="accordionSidebar">
+        
+                        <!-- Sidebar - Brand -->
+                        <a class="sidebar-brand d-lg-flex align-items-center justify-content-center d-none d-lg-block" href="index.html">
+                            <div class="sidebar-brand-icon">
+                                <i class="logo"></i>
+                            </div>
+                        </a>
+            
+                      
+            
+                        <!-- Nav Item - Dashboard -->
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">
+                                <i><img src="../assets/img/menu/dashboard.png"/><img src="../assets/img/menu/dashboard-active.png"/></i>
+                                <span>Dashboard</span>
+                                </a>
+                        </li>
+                         <!-- Nav Item - Administrator -->
+                        <li class="nav-item">
+                                <a class="nav-link" href="profile.html">
+                                    <i><img src="../assets/img/menu/administrator.png"/><img src="../assets/img/menu/administrator-active.png"/></i>
+                                    <span>Administrator</span>
+                                    </a>
+                            </li>
+             <!-- Nav Item - Chat -->
+                         <!-- Nav Item - Chat -->
+                         <li class="nav-item">
+                            <a class="nav-link" href="chat.html">
+                                <i><img src="../assets/img/menu/chat.png"/><img src="../assets/img/menu/chat-active.png"/></i>
+                                <span>chat</span>
+                                </a>
+                        </li>
+                         <!-- Nav Item - clients -->
+                         <li class="nav-item ">
+                            <a class="nav-link" href="client.html">
+                                <i><img src="../assets/img/menu/clients.png"/><img src="../assets/img/menu/clients-active.png"/></i>
+                                <span>Clients</span>
+                                </a>
+                        </li>
+                         <!-- Nav Item - property -->
+                         <li class="nav-item active">
+                            <a class="nav-link" href="propertydashboard.html">
+                                <i><img src="../assets/img/menu/property.png"/><img src="../assets/img/menu/property-active.png"/></i>
+                                <span>Property</span>
+                                </a>
+                        </li>
+                         <!-- Nav Item - appointments -->
+                         <li class="nav-item">
+                            <a class="nav-link" href="appointments.html">
+                                <i><img src="../assets/img/menu/appointments.png"/><img src="../assets/img/menu/appointments-active.png"/></i>
+                                <span>Appointments</span>
+                                </a>
+                        </li>
+                        <!-- Nav Item - Store -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="store.html">
+                                <i><img src="../assets/img/menu/store.png"/><img src="../assets/img/menu/store-active.png"/></i>
+                                <span>Store</span>
+                                </a>
+                        </li>
+                        
+            
+                       
+                    </ul>
+                <!-- End of Sidebar -->
+        
+                <!-- Content Wrapper -->
+                <div id="content-wrapper" class="d-flex flex-column">
+        
+                    <!-- Main Content -->
+                    <div id="content">
+        
+                          <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light  topbar mb-4 mb-sm-0 static-top ">
+
+                        <!-- Sidebar Toggle (Topbar) -->
+                        <button class="btn btn-link mobile-logo  align-items-center rounded-circle mr-3  d-none ">
+                            <i class="logo"></i> <img src="../assets/img/homly 1.svg">
+                        </button>
+                       
+    
+                        <!-- Topbar Navbar -->
+                        <ul class="navbar-nav ml-auto">
+    
+                                <li class="nav-item  mx-1 d-none "><a href="#" class="play-vidoes nav-link"><span>Please vidores </span> <img src="../assets/img/play-close-anim.svg"/></a></li>
+                                <li class="nav-item "><a class="nav-link day-night-theme" id="daynight"><i class="far fa-moon"></i></a> </li>
+                            <!-- Nav Item - Alerts -->
+                            <li class="nav-item dropdown no-arrow mx-1">
+                                <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="far fa-bell"></i>
+                                    <!-- Counter - Alerts -->
+                                    <span class="badge badge-danger badge-counter">3+</span>
+                                </a>
+                                <!-- Dropdown - Alerts -->
+                                <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                    aria-labelledby="alertsDropdown">
+                                    <h6 class="dropdown-header">
+                                        Alerts Center
+                                    </h6>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="mr-3">
+                                            <div class="icon-circle bg-primary">
+                                                <i class="fas fa-file-alt text-white"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="small text-gray-500">December 12, 2019</div>
+                                            <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="mr-3">
+                                            <div class="icon-circle bg-success">
+                                                <i class="fas fa-donate text-white"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="small text-gray-500">December 7, 2019</div>
+                                            $290.29 has been deposited into your account!
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="mr-3">
+                                            <div class="icon-circle bg-warning">
+                                                <i class="fas fa-exclamation-triangle text-white"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="small text-gray-500">December 2, 2019</div>
+                                            Spending Alert: We've noticed unusually high spending for your account.
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                                </div>
+                            </li>
+    
+                          
+    
+                            <div class="topbar-divider d-none d-sm-block"></div>
+    
+                            <!-- Nav Item - User Information -->
+                            <li class="nav-item dropdown no-arrow">
+                                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="mr-2 d-none d-lg-inline text-gray-600 small">Maria Lopez</span>
+                                   <span class="Profile_pic"><img class="img-profile rounded-circle"
+                                        src="../assets/img/undraw_profile.svg"></span> 
+                                </a>
+                                <!-- Dropdown - User Information -->
+                                <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                    aria-labelledby="userDropdown">
+                                    <a class="dropdown-item" href="profile.html">
+                                        <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                        Profile
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                        Settings
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                                        Activity Log
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                        <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                        Logout
+                                    </a>
+                                </div>
+                            </li>
+    
+                        </ul>
+    
+                    </nav>
+                    <!-- End of Topbar -->
+    
+        
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+                    <div class="pages-inner">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1 class="Page_hedding mobile-view"><span><img src="../assets/img/clients.png"></span> Properties List /</a> Property Editor </h1>
+                                <!-- <h1 class="Page_hedding"><span><img src="img/clients.png"></span> Edit Client </h1> // this part show when edit client --> 
+                            </div>
+                        </div>
+                        <div class="page-new">
+                            <div class="page-new-left">
+                                    <section class="client-tab-section">
+                                            <div class="">
+                                            <div class="proparties-main-title desktop-show">
+                                            <h2><a href="#">Properties List /</a> Property Editor </h2>
+                                            <div class="proparties-buttons">
+                                            <a class="btn publish-btn" href="#">Publish</a>
+                                            <a class="btn btn-primary" href="#">Save & Proceed</a>
+                                            </div>
+                                            </div>
+                                                 <div class="main-tab-div">
+                                                    <ul class="nav nav-tabs nav-pills nav-client-tabs" id="pills-tab" role="tablist">
+                                                        <li class="nav-item" role="presentation">
+                                                            <a class="nav-link active" id="pills-property-tab" data-toggle="pill" href="#pills-property" role="tab" aria-controls="pills-property" aria-selected="true">Property Details</a>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation">
+                                                            <a class="nav-link" id="pills-photogallery-tab" data-toggle="pill" href="#pills-photogallery" role="tab" aria-controls="pills-photogallery" aria-selected="false">Photo Gallery</a>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation">
+                                                            <a class="nav-link" id="pills-videosvirtual-tab" data-toggle="pill" href="#pills-videosvirtual" role="tab" aria-controls="pills-videosvirtual" aria-selected="false">Videos & Virtual</a>
+                                                        </li>
+                                
+                                                        <li class="nav-item" role="presentation">
+                                                            <a class="nav-link" id="pills-floorplan-tab" data-toggle="pill" href="#pills-floorplan" role="tab" aria-controls="pills-floorplan" aria-selected="false">Docs & Floorplan</a>
+                                                        </li>
+                                
+                                                        <li class="nav-item" role="presentation">
+                                                            <a class="nav-link" id="pills-address-tab" data-toggle="pill" href="#pills-address" role="tab" aria-controls="pills-address" aria-selected="false">Address & Map</a>
+                                                        </li>
+                                                         <li class="nav-item" role="presentation">
+                                                            <a class="nav-link" id="pills-theme-tab" data-toggle="pill" href="#pills-theme" role="tab" aria-controls="pills-theme" aria-selected="false">Theme Layout</a>
+                                                        </li>
+                                                         <li class="nav-item" role="presentation">
+                                                            <a class="nav-link" id="pills-agent-tab" data-toggle="pill" href="#pills-agent" role="tab" aria-controls="pills-agent" aria-selected="false">Agent</a>
+                                                        </li>
+                                
+                                                    </ul>
+                                                    
+                                                    <div class="tab-content" id="pills-tabContent">
+                                                         <div class="tab-pane fade show active" id="pills-property" role="tabpanel" aria-labelledby="pills-property-tab">
+                                                            <div class="client-informetion">
+                                                                <div class="form-group">
+                                                                <div class="row">
+                                                                    <label class="main-label col-xs-12 col-md-4 col-lg-2">Basic Info</label>
+                                                                     <div class="col-xs-12 col-md-4 col-lg-4 mobile-show">
+                                                                     <div class="properties-img">
+                                                                     <img src="../assets/img/properties-img.png">
+                                                                     </div>
+                                                                     </div>
+                                                                    <div class="col-xs-12 col-md-4 col-lg-6">
+                                                                    <div class="client-personalinformation agents-personalinformation">
+                                                                        <div class="row">
+                                                                            <div class="col-xs-12 col-md-6 col-lg-6 ">
+                                                                                <div class="form-group">
+                                                                                    <label>MLS Number</label>
+                                                                                    <input type="text" class="form-control" placeholder="D4029643">
+                                                                                </div>
+                                                                            </div>
+                                
+                                                                            <div class="col-xs-12 col-md-6 col-lg-6 ">
+                                                                                <div class="form-group">
+                                                                                    <label>Property Name</label>
+                                                                                    <input type="text" class="form-control" placeholder="" value="315 Grandpark CIR, SAN JOSE, California 95136">
+                                                                                </div>
+                                                                            </div>
+                                
+                                                                            <div class="col-xs-12 col-md-6 col-lg-6 ">
+                                                                                <div class="form-group">
+                                                                                    <label>Price</label>
+                                                                                    <input type="text" class="form-control" placeholder="" value="$45,000">
+                                                                                </div>
+                                                                            </div>
+                                                                            
+                                                                             <div class="col-xs-12 col-md-6 col-lg-6 ">
+                                                                                <div class="form-group">
+                                                                                    <label>Year Built</label>
+                                                                                    <input type="text" class="form-control" placeholder="" value="2015">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-xs-12 col-md-6 col-lg-6 ">
+                                                                                <div class="form-group">
+                                                                                    <label>Property Type</label>
+                                                                                    <select class="form-control" id="exampleFormControlSelect1">
+                                                                                        <option>Single</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                            
+                                                                            <div class="col-xs-12 col-md-6 col-lg-6 ">
+                                                                                <div class="form-group">
+                                                                                    <label>Property Status</label>
+                                                                                    <select class="form-control" id="exampleFormControlSelect1">
+                                                                                        <option>Published</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                            
+                                                                             <div class="col-xs-12 col-md-12 col-lg-12">
+                                                                    <div class="client-personalinformation agents-personalinformation">
+                                                                        <div class="form-group">
+                                                                            <label>Property Description</label>
+                                                                            <textarea class="form-control" value="Very nice and large home located close to theatres and shopping areas opportunity to own a large home in the Blossom Hill Area." ></textarea>
+                                                                            <div class="property-lunching">
+                                                                              Property Listed On: <span>2021 February 09</span>
+                                                                            </div>
+                                
+                                                                        </div>
+                                
+                                                                    </div>
+                                                                    </div>
+                                                                            
+                                                                        </div>
+                                                                    </div>
+                                                                    </div>
+                                                                     <div class="col-xs-12 col-md-4 col-lg-4 desktop-show">
+                                                                     <div class="properties-img">
+                                                                     <img src="../assets/img/properties-img.png">
+                                                                     </div>
+                                                                     </div>
+                                                                </div>
+                                                                </div>
+                                
+                                
+                                
+                                
+                                                                <div class="form-group form-group-smtp">
+                                                                <div class="row">
+                                                                    <label class="main-label col-xs-12 col-md-4 col-lg-2">Size & Rooms</label>
+                                                                    <div class="col-xs-12 col-md-4 col-lg-6">
+                                                                    <div class="client-personalinformation agents-personalinformation">
+                                                                        <div class="row">
+                                                                            <div class="col-xs-12 col-md-6 col-lg-6 ">
+                                                                                <div class="form-group">
+                                                                                    <label>SFLOT</label>
+                                                                                    <input type="text" class="form-control" placeholder="" value="0.1263">
+                                                                                </div>
+                                                                            </div>
+                                
+                                                                            <div class="col-xs-12 col-md-6 col-lg-6 ">
+                                                                                <div class="form-group">
+                                                                                    <label>Property in SQFT</label>
+                                                                                    <input type="text" class="form-control" placeholder="" value="2553">
+                                                                                </div>
+                                                                            </div>
+                                
+                                                                            <div class="col-xs-12 col-md-6 col-lg-6 ">
+                                                                                <div class="form-group">
+                                                                                <div class="form-group-full">
+                                                                                <div class="form-group-left">
+                                                                                    <label>Baths</label>
+                                                                                    <input type="text" class="form-control" placeholder="" value="4">
+                                                                                </div>
+                                                                                 <div class="form-group-left form-group-right">
+                                                                                    <label>Beds</label>
+                                                                                    <input type="text" class="form-control" placeholder="" value="3">
+                                                                                </div>
+                                                                                </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            
+                                                                            <div class="col-xs-12 col-md-6 col-lg-6 ">
+                                                                                <div class="form-group">
+                                                                                <div class="form-group-full">
+                                                                                <div class="form-group-left">
+                                                                                    <label>No. of Floors</label>
+                                                                                    <input type="text" class="form-control" placeholder="" value="1">
+                                                                                </div>
+                                                                                 <div class="form-group-left form-group-right">
+                                                                                    <label>Parking Spaces</label>
+                                                                                    <input type="text" class="form-control" placeholder="" value="0">
+                                                                                </div>
+                                                                                </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            
+                                
+                                                                            
+                                
+                                
+                                                                        </div>
+                                                                    </div>
+                                                                    </div>
+                                                                </div>
+                                                                </div>
+                                
+                                
+                                                                <div class="form-group form-group-smtp">
+                                                                <div class="row">
+                                                                    <label class="main-label col-xs-12 col-md-4 col-lg-2">Amenities</label>
+                                                                    <div class="col-xs-12 col-md-4 col-lg-6">
+                                                                   
+                                                                    <div class="client-personalinformation agents-personalinformation">
+                                                                     <div class="row">
+                                                                       <div class="col-xs-12 col-md-6 col-lg-6 ">
+                                                                                <div class="form-group">
+                                                                                    <input type="text" class="form-control" placeholder="" value="Handicap Accessible">
+                                                                                    <i class="cross-icon"><img src="../assets/img/cross-icon.png"></i>
+                                                                                </div>
+                                                                            </div>
+                                
+                                                                            <div class="col-xs-12 col-md-6 col-lg-6 ">
+                                                                                <div class="form-group">
+                                                                                    <input type="text" class="form-control" placeholder="" value="24-Hour Door Perspon">
+                                                                                    <i class="cross-icon"><img src="../assets/img/cross-icon.png"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                            
+                                                                            <div class="col-xs-12 col-md-6 col-lg-6 ">
+                                                                                <div class="form-group">
+                                                                                    <input type="text" class="form-control" placeholder="" value="Handicap Accessible">
+                                                                                    <i class="cross-icon"><img src="../assets/img/cross-icon.png"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                            
+                                                                            <div class="col-xs-12 col-md-6 col-lg-6 ">
+                                                                                <div class="form-group add-edit-amenity">
+                                                                                    <input type="text" class="form-control" placeholder="" value="Add/Edit Amenity">
+                                                                                </div>
+                                                                            </div>
+                                
+                                                                    </div>
+                                                                    </div>
+                                                                    </div>
+                                                                </div>
+                                                                </div>
+                                                               
+                                
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="pills-photogallery" role="tabpanel" aria-labelledby="pills-photogallery-tab">
+                                                            <div class="client-informetion">
+                                                                <div class="file-upload">
+                                                                <i><img src="../assets/img/upload-icon.png" alt=""></i>
+                                                                <h4>Drop files here</h4>
+                                                                <h6>or <span>Browse</span> from your device</h6>
+                                                                <input type="file" class="form-control">
+                                                                </div>
+                                                                 <div class="uploades-img">
+                                                                 <div class="row">
+                                                                 <div class="col-xs-12 col-md-4 col-lg-3">
+                                                                 <div class="card">
+                                                                 <div class="card-properti-img">
+                                  <img class="card-img-top" src="../assets/img/properti-img.png" alt="Card image cap">
+                                  </div>
+                                  <div class="card-body">
+                                    <a href="#" class="btn-delete"><img src="../assets/img/delete-icon.png" style="     width: auto; "></a>
+                                    <a href="#" class="btn-download">Download</a>
+                                  </div>
+                                </div>
+                                                                 </div>
+                                                                 
+                                                                 <div class="col-xs-12 col-md-4 col-lg-3">
+                                                                 <div class="card">
+                                                                 <div class="card-properti-img">
+                                  <img class="card-img-top" src="../assets/img/properti-img2.png" alt="Card image cap">
+                                  </div>
+                                  <div class="card-body">
+                                    <a href="#" class="btn-delete"><img src="../assets/img/delete-icon.png" style="     width: auto; "></a>
+                                    <a href="#" class="btn-download">Download</a>
+                                  </div>
+                                </div>
+                                                                 </div>
+                                                                 
+                                                                 <div class="col-xs-12 col-md-4 col-lg-3">
+                                                                 <div class="card">
+                                                                 <div class="card-properti-img">
+                                  <img class="card-img-top" src="../assets/img/properti-img.png" alt="Card image cap">
+                                  </div>
+                                  <div class="card-body">
+                                    <a href="#" class="btn-delete"><img src="../assets/img/delete-icon.png" style="     width: auto; "></a>
+                                    <a href="#" class="btn-download">Download</a>
+                                  </div>
+                                </div>
+                                                                 </div>
+                                                                 
+                                                                 <div class="col-xs-12 col-md-4 col-lg-3">
+                                                                 <div class="card">
+                                                                 <div class="card-properti-img">
+                                  <img class="card-img-top" src="../assets/img/properti-img2.png" alt="Card image cap">
+                                  </div>
+                                  <div class="card-body">
+                                    <a href="#" class="btn-delete"><img src="../assets/img/delete-icon.png" style="     width: auto; "></a>
+                                    <a href="#" class="btn-download">Download</a>
+                                  </div>
+                                </div>
+                                                                 </div>
+                                                                 
+                                                                 <div class="col-xs-12 col-md-4 col-lg-3">
+                                                                 <div class="card">
+                                                                 <div class="card-properti-img">
+                                  <img class="card-img-top" src="../assets/img/properti-img.png" alt="Card image cap">
+                                  </div>
+                                  <div class="card-body">
+                                    <a href="#" class="btn-delete"><img src="../assets/img/delete-icon.png" style="     width: auto; "></a>
+                                    <a href="#" class="btn-download">Download</a>
+                                  </div>
+                                </div>
+                                                                 </div>
+                                                                 
+                                                                 <div class="col-xs-12 col-md-4 col-lg-3">
+                                                                 <div class="card">
+                                                                 <div class="card-properti-img">
+                                  <img class="card-img-top" src="../assets/img/properti-img2.png" alt="Card image cap">
+                                  </div>
+                                  <div class="card-body">
+                                    <a href="#" class="btn-delete"><img src="../assets/img/delete-icon.png" style="     width: auto; "></a>
+                                    <a href="#" class="btn-download">Download</a>
+                                  </div>
+                                </div>
+                                                                 </div>
+                                                                 
+                                                                 <div class="col-xs-12 col-md-4 col-lg-3">
+                                                                 <div class="card">
+                                                                 <div class="card-properti-img">
+                                  <img class="card-img-top" src="../assets/img/properti-img.png" alt="Card image cap">
+                                  </div>
+                                  <div class="card-body">
+                                    <a href="#" class="btn-delete"><img src="../assets/img/delete-icon.png" style="     width: auto; "></a>
+                                    <a href="#" class="btn-download">Download</a>
+                                  </div>
+                                </div>
+                                                                 </div>
+                                                                 
+                                                                 <div class="col-xs-12 col-md-4 col-lg-3">
+                                                                 <div class="card">
+                                                                 <div class="card-properti-img">
+                                  <img class="card-img-top" src="../assets/img/properti-img2.png" alt="Card image cap">
+                                  </div>
+                                  <div class="card-body">
+                                    <a href="#" class="btn-delete"><img src="../assets/img/delete-icon.png" style="     width: auto; "></a>
+                                    <a href="#" class="btn-download">Download</a>
+                                  </div>
+                                </div>
+                                                                 </div>
+                                                                 
+                                                                 <div class="col-xs-12 col-md-4 col-lg-3">
+                                                                 <div class="card">
+                                                                 <div class="card-properti-img">
+                                  <img class="card-img-top" src="../assets/img/properti-img.png" alt="Card image cap">
+                                  </div>
+                                  <div class="card-body">
+                                    <a href="#" class="btn-delete"><img src="../assets/img/delete-icon.png" style="     width: auto; "></a>
+                                    <a href="#" class="btn-download">Download</a>
+                                  </div>
+                                </div>
+                                                                 </div>
+                                                                 
+                                                                
+                                                                 
+                                                                 
+                                                                 
+                                                                 </div>
+                                                                 </div>
+                                
+                                                            </div>
+                                
+                                                        </div>
+                                                        <div class="tab-pane fade" id="pills-videosvirtual" role="tabpanel" aria-labelledby="pills-videosvirtual-tab">
+                                                            <div class="client-informetion">
+                                                            <div class="upload-videos-bx">
+                                                            <div class="row">
+                                                            <div class="col-xs-12 col-md-6 col-lg-6">
+                                                            <div class="video-img">
+                                                            <img src="../assets/img/video-img.png">
+                                                            </div>
+                                                            </div>
+                                                             <div class="col-xs-12 col-md-6 col-lg-6">
+                                                             <div class="video-detail">
+                                                             <h3>Default Video</h3>
+                                                             <p>Upload a video under 15 MB from your local device, or use a video link from an external website instead, e.g. YouTube.</p>
+                                                             <div class="video-icons">
+                                                             <a href="#"><img src="../assets/img/upload-icon.png"></a>
+                                                             <a href="#"><img src="../assets/img/delete-icon.png" style="     width: auto; "></a>
+                                                             </div>
+                                                             
+                                                             <div class="video-link">
+                                                             <label>Video Link</label>
+                                                             <div class="video-input">
+                                                             <input type="text" class="form-control" placeholder="" value="https://www.youtube.com/watch?v=y9j-BL5ocW8">
+                                                             <i class="flopy-icon"><img src="../assets/img/icon-client.png"></i>
+                                                             </div>
+                                                             </div>
+                                                             </div>
+                                                             </div>
+                                                            
+                                                            </div>
+                                                            </div>
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            <div class="video-upload-bx">
+                                                            <div class="row">
+                                                            <div class="col-xs-12 col-md-6 col-lg-6">
+                                                            <div class="video-img">
+                                                            <img src="../assets/img/video-img.png">
+                                                            </div>
+                                                            </div>
+                                                             <div class="col-xs-12 col-md-6 col-lg-6">
+                                                             <div class="video-detail">
+                                                             <h3>Tour Video</h3>
+                                                             <p>Upload a video under 15 MB from your local device, or use a video link from the YouTube or Matterport.</p>
+                                                             <div class="video-icons">
+                                                             <a href="#"><img src="../assets/img/upload-icon.png"></a>
+                                                             <a href="#"><img src="../assets/img/delete-icon.png" style="     width: auto; "></a>
+                                                             </div>
+                                                             
+                                                             <div class="video-link">
+                                                             <label>Video Link</label>
+                                                             <div class="video-input">
+                                                             <input type="text" class="form-control" placeholder="" value="https://www.youtube.com/watch?v=y9j-BL5ocW8">
+                                                             <i class="flopy-icon"><img src="../assets/img/icon-client.png"></i>
+                                                             </div>
+                                                             </div>
+                                                             </div>
+                                                             </div>
+                                                            
+                                                            </div>
+                                                            </div>
+                                                            </div>
+                                
+                                                        </div>
+                                                        <div class="tab-pane fade" id="pills-floorplan" role="tabpanel" aria-labelledby="pills-floorplan-tab">
+                                                            <div class="client-informetion">
+                                                               <div class="file-upload">
+                                                                <i><img src="../assets/img/upload-icon.png" alt=""></i>
+                                                                <h4>Drop files here</h4>
+                                                                <h6>or <span>Browse</span> from your device</h6>
+                                                                <input type="file" class="form-control">
+                                                                </div>
+                                                                
+                                                                <div class="property-documents-bx">
+                                                                <h3>Property Documents</h3>
+                                                                <div class="property-documents-list">
+                                                                <div class="property-documents-list-bx">
+                                                                <ul>
+                                                                <li class="doc-file-icons"><i><img src="../assets/img/file-icon-red.png"></i></li>
+                                                                <li class="doc-name">50 North Street, San Diego.pdf</li>
+                                                                <li class="doc-action">
+                                                                <a href="#" class="edit-icons"><img src="../assets/img/pencil-icon.png"></a>
+                                                                <a href="#" class="doc-download-icons"><img src="../assets/img/download-icon.png"></a>
+                                                                <a href="#" class="doc-delete-icons"><img src="../assets/img/delete-icon.png"></a>
+                                                                </li>
+                                                                </ul>
+                                                                </div>
+                                                                
+                                                                <div class="property-documents-list-bx">
+                                                                <ul>
+                                                                <li class="doc-file-icons"><i><img src="../assets/img/file-icon-blue.png"></i></li>
+                                                                <li class="doc-name">50 North Street, San Diego.pdf</li>
+                                                                <li class="doc-action">
+                                                                <a href="#" class="edit-icons"><img src="../assets/img/pencil-icon.png"></a>
+                                                                <a href="#" class="doc-download-icons"><img src="../assets/img/download-icon.png"></a>
+                                                                <a href="#" class="doc-delete-icons"><img src="../assets/img/delete-icon.png"></a>
+                                                                </li>
+                                                                </ul>
+                                                                </div>
+                                                                
+                                                                <div class="property-documents-list-bx">
+                                                                <ul>
+                                                                <li class="doc-file-icons"><i><img src="../assets/img/image-icon.png"></i></li>
+                                                                <li class="doc-name">50 North Street, San Diego.pdf</li>
+                                                                <li class="doc-action">
+                                                                <a href="#" class="edit-icons"><img src="../assets/img/pencil-icon.png"></a>
+                                                                <a href="#" class="doc-download-icons"><img src="../assets/img/download-icon.png"></a>
+                                                                <a href="#" class="doc-delete-icons"><img src="../assets/img/delete-icon.png"></a>
+                                                                </li>
+                                                                </ul>
+                                                                </div>
+                                                                
+                                                                <div class="property-documents-list-bx">
+                                                                <ul>
+                                                                <li class="doc-file-icons"><i><img src="../assets/img/video-icon.png"></i></li>
+                                                                <li class="doc-name">50 North Street, San Diego.pdf</li>
+                                                                <li class="doc-action">
+                                                                <a href="#" class="edit-icons"><img src="../assets/img/pencil-icon.png"></a>
+                                                                <a href="#" class="doc-download-icons"><img src="../assets/img/download-icon.png"></a>
+                                                                <a href="#" class="doc-delete-icons"><img src="../assets/img/delete-icon.png"></a>
+                                                                </li>
+                                                                </ul>
+                                                                </div>
+                                                                </div>
+                                                                </div>
+                                
+                                                            </div>
+                                
+                                                        </div>
+                                                        <div class="tab-pane fade" id="pills-address" role="tabpanel" aria-labelledby="pills-address-tab">
+                                                            <div class="client-informetion">
+                                                            <div class="addrass-map">
+                                                            <img src="../assets/img/map-img.png">
+                                                            <div class="search-bx">
+                                                            <span><i class="fa fa-search" aria-hidden="true"></i></span>
+                                                            <input type="text" class="form-control" placeholder="" value="315 Grandpark CIR, SAN JOSE, California">
+                                                            <a href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+                                                            </div>
+                                                            <div class="full-screen"><img src="../assets/img/expand-icon.png"></div>
+                                                            <div class="map-address">
+                                                            <div class="address-box">
+                                                            <label>Street:</label><span>315 Grandpark CIR</span>
+                                                            </div>
+                                                            <div class="address-box">
+                                                            <label>City:</label><span>SAN JOSE</span>
+                                                            </div>
+                                                            
+                                                            <div class="address-box-left"><label>State:</label><span>California</span></div>
+                                                            <div class="address-box-left address-box-right"><label>State:</label><span>California</span></div>
+                                                            </div>
+                                                            
+                                                            <div class="zoom-screen">
+                                                            <a href="#">+</a>
+                                                            <a href="#">-</a>
+                                                            </div>
+                                                            </div>
+                                                            </div>
+                                
+                                                        </div>
+                                                        <div class="tab-pane fade" id="pills-theme" role="tabpanel" aria-labelledby="pills-theme-tab">
+                                                            <div class="client-informetion">
+                                                                
+                                 <div class="theme-layout-section">
+                                                                 <div class="row">
+                                                                 <div class="col-xs-12 col-md-4 col-lg-3">
+                                                                 <div class="card current-theme">
+                                                                 <div class="card-properti-img">
+                                  <img class="card-img-top" src="../assets/img/theme-layout-img.png" alt="Card image cap">
+                                  </div>
+                                  <div class="card-body">
+                                    <a href="#" class="btn-current-theme">Current Theme</a>
+                                  </div>
+                                </div>
+                                                                 </div>
+                                                                 
+                                                                 <div class="col-xs-12 col-md-4 col-lg-3">
+                                                                 <div class="card">
+                                                                 <div class="card-properti-img">
+                                  <img class="card-img-top" src="../assets/img/theme-layout-img2.png" alt="Card image cap">
+                                  </div>
+                                  <div class="card-body">
+                                    <a href="#" class="btn-current-theme">Select Theme</a>
+                                  </div>
+                                </div>
+                                                                 </div>
+                                                                  <div class="col-xs-12 col-md-4 col-lg-3">
+                                                                 <div class="card">
+                                                                 <div class="card-properti-img">
+                                  <img class="card-img-top" src="../assets/img/theme-layout-img3.png" alt="Card image cap">
+                                  </div>
+                                  <div class="card-body">
+                                    <a href="#" class="btn-current-theme">Select Theme</a>
+                                  </div>
+                                </div>
+                                                                 </div>
+                                                                  <div class="col-xs-12 col-md-4 col-lg-3">
+                                                                 <div class="card">
+                                                                 <div class="card-properti-img2">
+                                  <img class="card-img-top" src="../assets/img/theme-layout-img4.png" alt="Card image cap">
+                                  </div>
+                                  <div class="card-body">
+                                    <a href="#" class="btn-current-theme">Select Theme</a>
+                                  </div>
+                                </div>
+                                                                 </div>
+                                                                 
+                                                                  <div class="col-xs-12 col-md-4 col-lg-3">
+                                                                 <div class="card">
+                                                                 <div class="card-properti-img">
+                                  <img class="card-img-top" src="../assets/img/theme-layout-img.png" alt="Card image cap">
+                                  </div>
+                                  <div class="card-body">
+                                    <a href="#" class="btn-current-theme">Current Theme</a>
+                                  </div>
+                                </div>
+                                                                 </div>
+                                                                 
+                                                                 <div class="col-xs-12 col-md-4 col-lg-3">
+                                                                 <div class="card">
+                                                                 <div class="card-properti-img">
+                                  <img class="card-img-top" src="../assets/img/theme-layout-img2.png" alt="Card image cap">
+                                  </div>
+                                  <div class="card-body">
+                                    <a href="#" class="btn-current-theme">Select Theme</a>
+                                  </div>
+                                </div>
+                                                                 </div>
+                                                                  <div class="col-xs-12 col-md-4 col-lg-3">
+                                                                 <div class="card">
+                                                                 <div class="card-properti-img">
+                                  <img class="card-img-top" src="../assets/img/theme-layout-img3.png" alt="Card image cap">
+                                  </div>
+                                  <div class="card-body">
+                                    <a href="#" class="btn-current-theme">Select Theme</a>
+                                  </div>
+                                </div>
+                                                                 </div>
+                                                                  <div class="col-xs-12 col-md-4 col-lg-3">
+                                                                 <div class="card">
+                                                                 <div class="card-properti-img2">
+                                  <img class="card-img-top" src="../assets/img/theme-layout-img4.png" alt="Card image cap">
+                                  </div>
+                                  <div class="card-body">
+                                    <a href="#" class="btn-current-theme">Select Theme</a>
+                                  </div>
+                                </div>
+                                                                 </div>
+                                                                 
+                                                                 
+                                                                  <div class="col-xs-12 col-md-4 col-lg-3">
+                                                                 <div class="card">
+                                                                 <div class="card-properti-img">
+                                  <img class="card-img-top" src="../assets/img/theme-layout-img.png" alt="Card image cap">
+                                  </div>
+                                  <div class="card-body">
+                                    <a href="#" class="btn-current-theme">Current Theme</a>
+                                  </div>
+                                </div>
+                                                                 </div>
+                                                                 
+                                                                 <div class="col-xs-12 col-md-4 col-lg-3">
+                                                                 <div class="card">
+                                                                 <div class="card-properti-img">
+                                  <img class="card-img-top" src="../assets/img/theme-layout-img2.png" alt="Card image cap">
+                                  </div>
+                                  <div class="card-body">
+                                    <a href="#" class="btn-current-theme">Select Theme</a>
+                                  </div>
+                                </div>
+                                                                 </div>
+                                                                  <div class="col-xs-12 col-md-4 col-lg-3">
+                                                                 <div class="card">
+                                                                 <div class="card-properti-img">
+                                  <img class="card-img-top" src="../assets/img/theme-layout-img3.png" alt="Card image cap">
+                                  </div>
+                                  <div class="card-body">
+                                    <a href="#" class="btn-current-theme">Select Theme</a>
+                                  </div>
+                                </div>
+                                                                 </div>
+                                                                  <div class="col-xs-12 col-md-4 col-lg-3">
+                                                                 <div class="card">
+                                                                 <div class="card-properti-img2">
+                                  <img class="card-img-top" src="../assets/img/theme-layout-img4.png" alt="Card image cap">
+                                  </div>
+                                  <div class="card-body">
+                                    <a href="#" class="btn-current-theme">Select Theme</a>
+                                  </div>
+                                </div>
+                                                                 </div>
+                                                                 
+                                                                 </div>
+                                                                 </div>
+                                
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        
+                                                         <div class="tab-pane fade" id="pills-agent" role="tabpanel" aria-labelledby="pills-agent-tab">
+                                                            <div class="client-informetion">
+                                                                <div class="form-group">
+                                                                <div class="row">
+                                                                
+                                                                    <label class="main-label col-xs-12 col-md-4 col-lg-2">Personal Details</label>
+                                                                     <div class="col-xs-12 col-md-4 col-lg-4 mobile-show text-center">
+                                                                     <div class="agent-profile">
+                                                                     <div class="agent-profile-img">
+                                                                     <img src="../assets/img/client-img.png">
+                                                                     </div>
+                                                                     <div class="change-pictcr">
+                                                                     <a href="#"><img src="../assets/img/camera-icon.png"></a>
+                                                                     </div>
+                                                                     </div>
+                                                                     </div>
+                                                                    <div class="col-xs-12 col-md-4 col-lg-6">
+                                                                    <div class="client-personalinformation agents-personalinformation">
+                                                                        <div class="row">
+                                                                            <div class="col-xs-12 col-md-6 col-lg-6 ">
+                                                                                <div class="form-group">
+                                                                                    <label>Full Names</label>
+                                                                                    <input type="text" class="form-control" placeholder="Phyllis Philander Taylor" value="Phyllis Philander Taylor">
+                                                                                </div>
+                                                                            </div>
+                                
+                                                                            <div class="col-xs-12 col-md-6 col-lg-6 ">
+                                                                                <div class="form-group">
+                                                                                    <label>BRE</label>
+                                                                                    <input type="text" class="form-control" placeholder="" value="Sales">
+                                                                                </div>
+                                                                            </div>
+                                
+                                                                            <div class="col-xs-12 col-md-6 col-lg-6 ">
+                                                                                <div class="form-group">
+                                                                                    <label>Email</label>
+                                                                                    <input type="text" class="form-control" placeholder="" value="Phyllis.taylor@gohomly.com ">
+                                                                                </div>
+                                                                            </div>
+                                                                            
+                                                                             <div class="col-xs-12 col-md-6 col-lg-6 ">
+                                                                                <div class="form-group">
+                                                                                    <label>Phone Number</label>
+                                                                                    <input type="text" class="form-control" placeholder="" value="+1 (080) 8708-090">
+                                                                                </div>
+                                                                            </div>
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                        </div>
+                                                                    </div>
+                                                                    </div>
+                                                                     <div class="col-xs-12 col-md-4 col-lg-4 desktop-show">
+                                                                     <div class="agent-profile">
+                                                                     <div class="agent-profile-img">
+                                                                     <img src="../assets/img/client-img.png">
+                                                                     </div>
+                                                                     <div class="change-pictcr">
+                                                                     <a href="#"><img src="../assets/img/camera-icon.png"></a>
+                                                                     </div>
+                                                                     </div>
+                                                                     </div>
+                                                                </div>
+                                                                </div>
+                                
+                                
+                                
+                                
+                                                                
+                                
+                                    
+                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="proparties-buttons mobile-show">
+                                            <a class="btn publish-btn" href="#">Publish</a>
+                                            <a class="btn btn-primary" href="#">Save & Proceed</a>
+                                            </div>
+                                            </div>
+                                        </section>
+                                
+                        
+                            </div>
+                            <div class="page-new-right">
+                                <div class="menu-wrapper helpvideosection">
+                                        <div class="scrollmenudiv">
+                                    <ul class="nav nav-tabs vidoe_tabs ">
+                                        <li class="nav-item"><a data-url="../assets/vedio/openHouse-min.mp4" class="nav-link">On Demand Open House</a></li>
+                                        <li class="nav-item"><a data-url="../assets/vedio/smarthome-min.mp4" class="nav-link">Smart Home Controls</a></li>
+                                        <li class="nav-item"><a data-url="../assets/vedio/propertyPortal-min.mp4" class="nav-link">Property Portal</a></li>
+                                        <li class="nav-item"><a data-url="../assets/vedio/auction-min.mp4" class="nav-link">Multi-Stage Auction</a></li>
+                                        <li class="nav-item"><a data-url="../assets/vedio/submittalTool-min.mp4" class="nav-link">Offer Submittal Tool</a></li>
+                                        <li class="nav-item"><a data-url="../assets/vedio/openComms-min.mp4" class="nav-link">Open Communication</a></li>
+                                        <li class="nav-item"><a data-url="../assets/vedio/fullService-min.mp4" class="nav-link">Full Service</a></li>
+                                        <li class="nav-item"><a data-url="../assets/vedio/autoIntelligence-min.mp4" class="nav-link">Automated Intelligence</a></li>
+                                        <li class="nav-item"><a data-url="../assets/vedio/homeRehab-min.mp4" class="nav-link">Home Rehab Service</a></li>
+                                    </ul>
+                                 
+                                    </div>
+
+                                    <video id="myhelpvideo" controls poster="../assets/img/instructional-video-player.png">
+                                        <source src="../assets/vedio/openHouse-min.mp4" type="video/mp4">
+                                    </video>
+
+                                </div>
+
+
+                            </div>
+                        
+                         
+                        </div>
+
+                       
+                    </div>
+
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="../assets/">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="../assets/vendor/jquery/jquery.min.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../assets/js/jquery.bs4-scrolling-tabs.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="../assets/js/homly.js"></script>
+
+  
+   
+</body>
+
+</html>
