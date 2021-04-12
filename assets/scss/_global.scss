@@ -1341,10 +1341,13 @@ img{  max-width: 100%;}
   border: none!important;
 }
 .vidoe_tabs a.nav-link {
-  padding:11px ​8p;
-  color: #434343;
   cursor: pointer;
-  border: none!important;
+  border: none !important;
+  display: inline-block;
+  color: #bbbbbb;
+  font-size: 13px;
+  margin: 0 9px;
+  padding: 10px 5px;
 }
 .vidoe_tabs a.nav-link:focus , .vidoe_tabs a.nav-link:hover, a.nav-link.active{
  border: none!important;
@@ -2215,7 +2218,9 @@ margin: 30px 0;
 
 
 
-
+ul>li {
+  margin: 0rem 0;
+}
 
 
 

@@ -46,11 +46,11 @@
     background-color: #eeeeee; }
 
 .scrtabs-tab-scroll-arrow > span {
-  border-right: 2px solid #757575;
-  border-bottom: 2px solid #757575;
+  border-right: 1px solid #bbbbbb;
+  border-bottom: 1px solid #bbbbbb;
   display: block;
-  width: 9px;
-  height: 9px;
+  width: 7px;
+  height: 7px;
   transform: rotate(-45deg); }
   .scrtabs-tab-scroll-arrow > span:hover {
     border-right-color: #0056b3;
