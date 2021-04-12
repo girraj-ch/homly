@@ -107,6 +107,7 @@ a {
 .dashboard{
   padding-top: 5vh;
   height: calc(100vh - 54px); 
+  @include media-breakpoint-between(xs, md) { height:auto; }
  .welcome_hedding {
       margin-bottom: 10vh;
       font-size: 56px;
@@ -286,31 +287,31 @@ a {
           }
       }
       
-      .dashboard_box_mobile-view{
-        &>.row {
-          flex-direction: row;
-          flex-wrap: inherit;
-          /* width: 1000px; */
-          overflow: auto;
-          /* align-items: center; */
-          /* justify-content: center; */
-          &>div{
-            margin-top: 10px;
-          }
-      }
-      }
+      // .dashboard_box_mobile-view{
+      //   &>.row {
+      //     flex-direction: row;
+      //     flex-wrap: inherit;
+      //     /* width: 1000px; */
+      //     overflow: auto;
+      //     /* align-items: center; */
+      //     /* justify-content: center; */
+      //     &>div{
+      //       margin-top: 10px;
+      //     }
+      // }
+      // }
 
-      &_box{
-        width: 240px;
-        height:200px;
-        margin-bottom:20px;
-        @include media-breakpoint-only(md) { 
-          width: 100%;
-        }
-        h3{
-          font-size: 14px;
-        }
-      }
+      // &_box{
+      //   width: 240px;
+      //   height:200px;
+      //   margin-bottom:20px;
+      //   @include media-breakpoint-only(md) { 
+      //     width: 100%;
+      //   }
+      //   h3{
+      //     font-size: 14px;
+      //   }
+      // }
       .dashboard_box_details{
         ul a {
           font-size: 12px;
@@ -673,7 +674,7 @@ button.saveprofile:hover {
 @include media-breakpoint-between(xs, md) {
   h1.Page_hedding {
     font-size: 20px;
-    margin-bottom: 10px;
+    margin-bottom:15px;
     margin-top: 15px;
 }
 h1.Page_hedding img {
@@ -1151,7 +1152,7 @@ img.rightarrow {
   display: flex;
   align-items: flex-start;
   @include media-breakpoint-between(xs, md) {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 }
 
@@ -1173,6 +1174,7 @@ img.rightarrow {
   @include media-breakpoint-between(xs, md) {
     width: calc(100% - 0%);
     padding: 0px;
+    margin-top: 10px;
 
   }
 }
@@ -1715,7 +1717,7 @@ img {}
 }
 .form-group-left {
 	float: left;
-	width: 40%;
+	width: 48%;
 }
 .form-group-right {
 	float: right;

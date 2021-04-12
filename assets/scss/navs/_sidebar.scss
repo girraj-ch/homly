@@ -18,7 +18,7 @@
         height: auto;
         flex-direction: row;
         overflow: auto;
-        padding: 8px 0px;
+        padding: 0px 0px;
         justify-content: space-between;
         border-top: 1px solid #ccc;
     box-shadow: 1px 1px 12px -6px #222;
@@ -52,8 +52,9 @@
             @include media-breakpoint-between(xs, md) {
                         
                 width: auto;
-                padding: 0rem 1rem;
-                height:auto;
+                height: auto;
+                padding: 6px 20px;
+                border-radius: 0px;
             }
             span {
                 font-size: 0.65rem;
