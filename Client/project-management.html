@@ -265,11 +265,7 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
                 <div class="pages-inner">
-                    <div class="row">
-                            <div class="col-md-12">
-                            <h1 class="Page_hedding"><span><img src="../assets/img/Administrator.png"></span> Administrator </h1>
-                            </div>
-                    </div>
+                
                             <div class="page-new">
                                    <div class="page-new-left">
                                     <section class="project-management-section">
@@ -613,56 +609,84 @@
       <!-- Custom scripts for all pages-->
       <script src="../assets/js/homly.js"></script>
   
+      <script type="text/javascript">
+        $(document).ready(function () {
+            $('.ftdrop1').click(function () {
+                if ($('.ftdrop1').hasClass('ftopen1')) {
+                    $('.ftdrop1').removeClass('ftopen1');
+                } else {
+                    $('.ftdrop1').addClass('ftopen1');
+                }
+                $(".ftblock1").slideToggle();
+            });
+            $('.ftdrop2').click(function () {
+                if ($('.ftdrop2').hasClass('ftopen2')) {
+                    $('.ftdrop2').removeClass('ftopen2');
+                } else {
+                    $('.ftdrop2').addClass('ftopen2');
+                }
+                $(".ftblock2").slideToggle();
+            });
+            $('.ftdrop3').click(function () {
+                if ($('.ftdrop3').hasClass('ftopen3')) {
+                    $('.ftdrop3').removeClass('ftopen3');
+                } else {
+                    $('.ftdrop3').addClass('ftopen3');
+                }
+                $(".ftblock3").slideToggle();
+            });
+        });</script>
+
     <script>
-    
-    $(document).ready(function () {
+        $(document).ready(function () {
 
-$("#newboard").click(function () {
-    $(".newboard-modal").addClass("newboard-modal-show");
-});
-$("#newboardmobile").click(function () {
-    $(".newboard-modal").addClass("newboard-modal-show");
-});
+            $("#newboard").click(function () {
+                $(".newboard-modal").addClass("newboard-modal-show");
+            });
+            $("#newboardmobile").click(function () {
+                $(".newboard-modal").addClass("newboard-modal-show");
+            });
 
-$("#newboardclose").click(function () {
-    $(".newboard-modal").removeClass("newboard-modal-show");
-});
+            $("#newboardclose").click(function () {
+                $(".newboard-modal").removeClass("newboard-modal-show");
+            });
 
-$("#newboard").click(function () {
-    $("body").addClass("overflow-hidden");
-});
+            $("#newboard").click(function () {
+                $("body").addClass("overflow-hidden");
+            });
 
-$("#newboardclose").click(function () {
-    $("body").removeClass("overflow-hidden");
-});
-
-
-$("#additems").click(function () {
-    $(".add-item-modal").addClass("add-item-modal-show");
-});
-
-$("#additemclose").click(function () {
-    $(".add-item-modal").removeClass("add-item-modal-show");
-});
+            $("#newboardclose").click(function () {
+                $("body").removeClass("overflow-hidden");
+            });
 
 
-$("#commentsbtn").click(function () {
-    $(".add-comments-modal").addClass("add-item-modal-show");
-});
+            $("#additems").click(function () {
+                $(".add-item-modal").addClass("add-item-modal-show");
+            });
 
-$("#commentsclose").click(function () {
-    $(".add-comments-modal").removeClass("add-item-modal-show");
-});
+            $("#additemclose").click(function () {
+                $(".add-item-modal").removeClass("add-item-modal-show");
+            });
+            
+            
+            $("#commentsbtn").click(function () {
+                $(".add-comments-modal").addClass("add-item-modal-show");
+            });
 
- $("#attachmentsbtn").click(function () {
-    $(".attachment-modal").addClass("add-item-modal-show");
-});
+            $("#commentsclose").click(function () {
+                $(".add-comments-modal").removeClass("add-item-modal-show");
+            });
+            
+             $("#attachmentsbtn").click(function () {
+                $(".attachment-modal").addClass("add-item-modal-show");
+            });
 
-$("#attachmentclose").click(function () {
-    $(".attachment-modal").removeClass("add-item-modal-show");
-});
+            $("#attachmentclose").click(function () {
+                $(".attachment-modal").removeClass("add-item-modal-show");
+            });
 
-});
+        });
+
     </script>
 
 </body>
