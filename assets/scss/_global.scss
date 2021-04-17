@@ -2355,6 +2355,7 @@ body.nightmode, .nightmode #wrapper, .nightmode .pages{
   border-radius:5px;  
 /*   box-shadow: 0px 5px 35px 9px #464a92; */
   box-shadow: 0px 5px 35px 9px #ccc;
+  z-index: 9;
 }
 .chat-box-toggle {
   float:right;

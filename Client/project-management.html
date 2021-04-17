@@ -613,7 +613,57 @@
       <!-- Custom scripts for all pages-->
       <script src="../assets/js/homly.js"></script>
   
+    <script>
     
+    $(document).ready(function () {
+
+$("#newboard").click(function () {
+    $(".newboard-modal").addClass("newboard-modal-show");
+});
+$("#newboardmobile").click(function () {
+    $(".newboard-modal").addClass("newboard-modal-show");
+});
+
+$("#newboardclose").click(function () {
+    $(".newboard-modal").removeClass("newboard-modal-show");
+});
+
+$("#newboard").click(function () {
+    $("body").addClass("overflow-hidden");
+});
+
+$("#newboardclose").click(function () {
+    $("body").removeClass("overflow-hidden");
+});
+
+
+$("#additems").click(function () {
+    $(".add-item-modal").addClass("add-item-modal-show");
+});
+
+$("#additemclose").click(function () {
+    $(".add-item-modal").removeClass("add-item-modal-show");
+});
+
+
+$("#commentsbtn").click(function () {
+    $(".add-comments-modal").addClass("add-item-modal-show");
+});
+
+$("#commentsclose").click(function () {
+    $(".add-comments-modal").removeClass("add-item-modal-show");
+});
+
+ $("#attachmentsbtn").click(function () {
+    $(".attachment-modal").addClass("add-item-modal-show");
+});
+
+$("#attachmentclose").click(function () {
+    $(".attachment-modal").removeClass("add-item-modal-show");
+});
+
+});
+    </script>
 
 </body>
 
