@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Homly">
+
+    <title>Homly - Admin Dashboard</title>
+
+    <!-- Custom fonts for homly-->
+    <link href="../assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    
+    <!-- Custom styles for homly-->
+    <link href="../assets/css/homly.css" rel="stylesheet">
+    <link href="../assets/css/jquery.bs4-scrolling-tabs.css" rel="stylesheet">
+</head>
+
+<body id="page-top" class="sidebar-toggled">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper" class="pages">
+
+        <!-- Sidebar -->
+        <!-- Sidebar -->
+        <ul class="navbar-nav  sidebar sidebar-dark accordion toggled" id="accordionSidebar">
+
+                <!-- Sidebar - Brand -->
+                <a class="sidebar-brand d-lg-flex align-items-center justify-content-center d-none d-lg-block" href="index.html">
+                    <div class="sidebar-brand-icon">
+                        <i class="logo"></i>
+                    </div>
+                </a>
+    
+              
+    
+                <!-- Nav Item - Dashboard -->
+                <li class="nav-item ">
+                    <a class="nav-link" href="index.html">
+                        <i><img src="../assets/img/menu/dashboard.png"/><img src="../assets/img/menu/dashboard-active.png"/></i>
+                        <span>Dashboard</span>
+                        </a>
+                </li>
+                 <!-- Nav Item - Administrator -->
+              <li class="nav-item">
+                    <a class="nav-link" href="profile.html">
+                        <i><img src="../assets/img/menu/administrator.png"/><img src="../assets/img/menu/administrator-active.png"/></i>
+                        <span>Administrator</span>
+                        </a>
+                </li>
+             <!-- Nav Item - Chat -->
+                 <!-- Nav Item - Chat -->
+                 <li class="nav-item">
+                    <a class="nav-link" href="chat.html">
+                        <i><img src="../assets/img/menu/chat.png"/><img src="../assets/img/menu/chat-active.png"/></i>
+                        <span>chat</span>
+                        </a>
+                </li>
+                 <!-- Nav Item - clients -->
+                 <li class="nav-item active">
+                    <a class="nav-link" href="client.html">
+                        <i><img src="../assets/img/menu/clients.png"/><img src="../assets/img/menu/clients-active.png"/></i>
+                        <span>Clients</span>
+                        </a>
+                </li>
+                 <!-- Nav Item - property -->
+                 <li class="nav-item">
+                    <a class="nav-link" href="propertydashboard.html">
+                        <i><img src="../assets/img/menu/property.png"/><img src="../assets/img/menu/property-active.png"/></i>
+                        <span>Property</span>
+                        </a>
+                </li>
+                 <!-- Nav Item - appointments -->
+                 <li class="nav-item">
+                    <a class="nav-link" href="appointments.html">
+                        <i><img src="../assets/img/menu/appointments.png"/><img src="../assets/img/menu/appointments-active.png"/></i>
+                        <span>Appointments</span>
+                        </a>
+                </li>
+                <!-- Nav Item - Store -->
+                <li class="nav-item">
+                    <a class="nav-link" href="store.html">
+                        <i><img src="../assets/img/menu/store.png"/><img src="../assets/img/menu/store-active.png"/></i>
+                        <span>Store</span>
+                        </a>
+                </li>
+                
+    
+               
+            </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                  <!-- Topbar -->
+                  <nav class="navbar navbar-expand navbar-light  topbar mb-4 mb-sm-0 static-top ">
+
+                        <!-- Sidebar Toggle (Topbar) -->
+                        <button class="btn btn-link mobile-logo  align-items-center rounded-circle mr-3  d-none ">
+                            <i class="logo"></i> <img src="../assets/img/homly 1.svg">
+                        </button>
+                       
+    
+                        <!-- Topbar Navbar -->
+                        <ul class="navbar-nav ml-auto">
+    
+                                <li class="nav-item  mx-1 d-none "><a href="#" class="play-vidoes nav-link"><span>Please vidores </span> <img src="../assets/img/play-close-anim.svg"/></a></li>
+                                <li class="nav-item "><a class="nav-link day-night-theme" id="daynight"><i class="far fa-moon"></i></a> </li>
+                            <!-- Nav Item - Alerts -->
+                            <li class="nav-item dropdown no-arrow mx-1">
+                                <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="far fa-bell"></i>
+                                    <!-- Counter - Alerts -->
+                                    <span class="badge badge-danger badge-counter">3+</span>
+                                </a>
+                                <!-- Dropdown - Alerts -->
+                                <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                    aria-labelledby="alertsDropdown">
+                                    <h6 class="dropdown-header">
+                                        Alerts Center
+                                    </h6>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="mr-3">
+                                            <div class="icon-circle bg-primary">
+                                                <i class="fas fa-file-alt text-white"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="small text-gray-500">December 12, 2019</div>
+                                            <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="mr-3">
+                                            <div class="icon-circle bg-success">
+                                                <i class="fas fa-donate text-white"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="small text-gray-500">December 7, 2019</div>
+                                            $290.29 has been deposited into your account!
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="mr-3">
+                                            <div class="icon-circle bg-warning">
+                                                <i class="fas fa-exclamation-triangle text-white"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="small text-gray-500">December 2, 2019</div>
+                                            Spending Alert: We've noticed unusually high spending for your account.
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                                </div>
+                            </li>
+    
+                          
+    
+                            <div class="topbar-divider d-none d-sm-block"></div>
+    
+                            <!-- Nav Item - User Information -->
+                            <li class="nav-item dropdown no-arrow">
+                                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="mr-2 d-none d-lg-inline text-gray-600 small">Maria Lopez</span>
+                                   <span class="Profile_pic"><img class="img-profile rounded-circle"
+                                        src="../assets/img/undraw_profile.svg"></span> 
+                                </a>
+                                <!-- Dropdown - User Information -->
+                                <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                    aria-labelledby="userDropdown">
+                                    <a class="dropdown-item" href="profile.html">
+                                        <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                        Profile
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                        Settings
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                                        Activity Log
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                        <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                        Logout
+                                    </a>
+                                </div>
+                            </li>
+    
+                        </ul>
+    
+                    </nav>
+                    <!-- End of Topbar -->
+    
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+                    <div class="pages-inner">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1 class="Page_hedding"><span><img src="../assets/img/clients.png"></span> Clients </h1>
+                            </div>
+                        </div>
+                        <div class="page-new">
+                            <div class="page-new-left">
+                                <div class="page-headding">
+                                    <div class="page-headding-left">
+                                        <div class="page-search">
+                                            <img src="../assets/img/search.png"> <input type="search" class="form-control" placeholder="Search for clients" />
+                                        </div>
+                                    </div>
+                                    <div class="page-headding-right">
+                                        <ul>
+                                            <li><span>Sort By:</span> <select>
+                                                    <option> Newest </option>
+                                                    <option> old </option>
+                                                </select></li>
+                                            <li><i class="far fa-question-circle"></i> User Help</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12 col-lg-6 col-xl-4 ">
+                                        <div class="cleint_list">
+                                            <div class="cleint_div">
+                                                <div class="cleint_img">
+                                                    <img src="../assets/img/user.png">
+                                                   
+                                                </div>
+                                                <span class="status"></span>
+                                                <div class="client_agent">
+                                                    <h1>Edith Jones</h1>
+                                                    <label class="id">32</label>
+                                                </div>
+                                                <div class="client_agent_button">
+                                                    <a data-toggle="tooltip" data-placement="top" title="  Edit Client Account "
+                                                        href="client_create.html" class="client_edit"><i class="fas fa-pencil-alt"></i></a>
+                                                    <a data-toggle="tooltip" data-placement="top" title=" Delete Client Account"
+                                                        href="#" class="client_delete"><i class="far fa-trash-alt"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="client_button">
+                                                <ul>
+                                                    <li><a href="tel:408-800-5050"><span><i class="far fa-envelope"></i></span>
+                                                            Send an email </a></li>
+                                                    <li><a href="sms://408-800-5050"><span><i class="fas fa-phone-alt"></i></span>
+                                                            Call </a></li>
+
+
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 col-lg-6 col-xl-4 ">
+                                            <div class="cleint_list">
+                                                <div class="cleint_div">
+                                                    <div class="cleint_img">
+                                                        <img src="../assets/img/user.png">
+                                                       
+                                                    </div>
+                                                    <span class="status"></span>
+                                                    <div class="client_agent">
+                                                        <h1>Edith Jones</h1>
+                                                        <label class="id">32</label>
+                                                    </div>
+                                                    <div class="client_agent_button">
+                                                        <a data-toggle="tooltip" data-placement="top" title="  Edit Client Account "
+                                                            href="client_create.html" class="client_edit"><i class="fas fa-pencil-alt"></i></a>
+                                                        <a data-toggle="tooltip" data-placement="top" title=" Delete Client Account"
+                                                            href="#" class="client_delete"><i class="far fa-trash-alt"></i></a>
+                                                    </div>
+                                                </div>
+                                                <div class="client_button">
+                                                    <ul>
+                                                        <li><a href="tel:408-800-5050"><span><i class="far fa-envelope"></i></span>
+                                                                Send an email </a></li>
+                                                        <li><a href="sms://408-800-5050"><span><i class="fas fa-phone-alt"></i></span>
+                                                                Call </a></li>
+    
+    
+                                                    </ul>
+                                                </div>
+                                            </div>
+    
+                                        </div>
+                                        <div class="col-md-6 col-sm-12 col-lg-6 col-xl-4 ">
+                                                <div class="cleint_list">
+                                                    <div class="cleint_div">
+                                                        <div class="cleint_img">
+                                                            <img src="../assets/img/user.png">
+                                                           
+                                                        </div>
+                                                        <span class="status"></span>
+                                                        <div class="client_agent">
+                                                            <h1>Edith Jones</h1>
+                                                            <label class="id">32</label>
+                                                        </div>
+                                                        <div class="client_agent_button">
+                                                            <a data-toggle="tooltip" data-placement="top" title="  Edit Client Account "
+                                                                href="client_create.html" class="client_edit"><i class="fas fa-pencil-alt"></i></a>
+                                                            <a data-toggle="tooltip" data-placement="top" title=" Delete Client Account"
+                                                                href="#" class="client_delete"><i class="far fa-trash-alt"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="client_button">
+                                                        <ul>
+                                                            <li><a href="tel:408-800-5050"><span><i class="far fa-envelope"></i></span>
+                                                                    Send an email </a></li>
+                                                            <li><a href="sms://408-800-5050"><span><i class="fas fa-phone-alt"></i></span>
+                                                                    Call </a></li>
+        
+        
+                                                        </ul>
+                                                    </div>
+                                                </div>
+        
+                                            </div>
+                                            <div class="col-md-6 col-sm-12 col-lg-6 col-xl-4 ">
+                                                    <div class="cleint_list">
+                                                        <div class="cleint_div">
+                                                            <div class="cleint_img">
+                                                                <img src="../assets/img/user.png">
+                                                               
+                                                            </div>
+                                                            <span class="status"></span>
+                                                            <div class="client_agent">
+                                                                <h1>Edith Jones</h1>
+                                                                <label class="id">32</label>
+                                                            </div>
+                                                            <div class="client_agent_button">
+                                                                <a data-toggle="tooltip" data-placement="top" title="  Edit Client Account "
+                                                                    href="client_create.html" class="client_edit"><i class="fas fa-pencil-alt"></i></a>
+                                                                <a data-toggle="tooltip" data-placement="top" title=" Delete Client Account"
+                                                                    href="#" class="client_delete"><i class="far fa-trash-alt"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="client_button">
+                                                            <ul>
+                                                                <li><a href="tel:408-800-5050"><span><i class="far fa-envelope"></i></span>
+                                                                        Send an email </a></li>
+                                                                <li><a href="sms://408-800-5050"><span><i class="fas fa-phone-alt"></i></span>
+                                                                        Call </a></li>
+            
+            
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+            
+                                                </div>
+                                                <div class="col-md-6 col-sm-12 col-lg-6 col-xl-4 ">
+                                                        <div class="cleint_list">
+                                                            <div class="cleint_div">
+                                                                <div class="cleint_img">
+                                                                    <img src="../assets/img/user.png">
+                                                                   
+                                                                </div>
+                                                                <span class="status"></span>
+                                                                <div class="client_agent">
+                                                                    <h1>Edith Jones</h1>
+                                                                    <label class="id">32</label>
+                                                                </div>
+                                                                <div class="client_agent_button">
+                                                                    <a data-toggle="tooltip" data-placement="top" title="  Edit Client Account "
+                                                                        href="client_create.html" class="client_edit"><i class="fas fa-pencil-alt"></i></a>
+                                                                    <a data-toggle="tooltip" data-placement="top" title=" Delete Client Account"
+                                                                        href="#" class="client_delete"><i class="far fa-trash-alt"></i></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="client_button">
+                                                                <ul>
+                                                                    <li><a href="tel:408-800-5050"><span><i class="far fa-envelope"></i></span>
+                                                                            Send an email </a></li>
+                                                                    <li><a href="sms://408-800-5050"><span><i class="fas fa-phone-alt"></i></span>
+                                                                            Call </a></li>
+                
+                
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                
+                                                    </div>
+                                                    <div class="col-md-6 col-sm-12 col-lg-6 col-xl-4 ">
+                                                            <div class="cleint_list">
+                                                                <div class="cleint_div">
+                                                                    <div class="cleint_img">
+                                                                        <img src="../assets/img/user.png">
+                                                                       
+                                                                    </div>
+                                                                    <span class="status"></span>
+                                                                    <div class="client_agent">
+                                                                        <h1>Edith Jones</h1>
+                                                                        <label class="id">32</label>
+                                                                    </div>
+                                                                    <div class="client_agent_button">
+                                                                        <a data-toggle="tooltip" data-placement="top" title="  Edit Client Account "
+                                                                            href="client_create.html" class="client_edit"><i class="fas fa-pencil-alt"></i></a>
+                                                                        <a data-toggle="tooltip" data-placement="top" title=" Delete Client Account"
+                                                                            href="#" class="client_delete"><i class="far fa-trash-alt"></i></a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="client_button">
+                                                                    <ul>
+                                                                        <li><a href="tel:408-800-5050"><span><i class="far fa-envelope"></i></span>
+                                                                                Send an email </a></li>
+                                                                        <li><a href="sms://408-800-5050"><span><i class="fas fa-phone-alt"></i></span>
+                                                                                Call </a></li>
+                    
+                    
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                    
+                                                        </div>
+
+                                </div>
+                                <a href="client_create.html" class="btn btn-primary addnewbutton"> Add Client</a>
+                            </div>
+                            <div class="page-new-right">
+                                    <div class="menu-wrapper helpvideosection">
+                                            <div class="scrollmenudiv">
+                                        <ul class="nav nav-tabs vidoe_tabs ">
+                                            <li class="nav-item"><a data-url="../assets/vedio/openHouse-min.mp4" class="nav-link">On Demand Open House</a></li>
+                                            <li class="nav-item"><a data-url="../assets/vedio/smarthome-min.mp4" class="nav-link">Smart Home Controls</a></li>
+                                            <li class="nav-item"><a data-url="../assets/vedio/propertyPortal-min.mp4" class="nav-link">Property Portal</a></li>
+                                            <li class="nav-item"><a data-url="../assets/vedio/auction-min.mp4" class="nav-link">Multi-Stage Auction</a></li>
+                                            <li class="nav-item"><a data-url="../assets/vedio/submittalTool-min.mp4" class="nav-link">Offer Submittal Tool</a></li>
+                                            <li class="nav-item"><a data-url="../assets/vedio/openComms-min.mp4" class="nav-link">Open Communication</a></li>
+                                            <li class="nav-item"><a data-url="../assets/vedio/fullService-min.mp4" class="nav-link">Full Service</a></li>
+                                            <li class="nav-item"><a data-url="../assets/vedio/autoIntelligence-min.mp4" class="nav-link">Automated Intelligence</a></li>
+                                            <li class="nav-item"><a data-url="../assets/vedio/homeRehab-min.mp4" class="nav-link">Home Rehab Service</a></li>
+                                        </ul>
+                                     
+                                        </div>
+    
+                                        <video id="myhelpvideo" controls poster="../assets/img/instructional-video-player.png">
+                                            <source src="../assets/vedio/openHouse-min.mp4" type="video/mp4">
+                                        </video>
+    
+                                    </div>
+
+
+                            </div>
+                        
+                         
+                        </div>
+
+                       
+                    </div>
+
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="../login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+ 
+      <!-- Bootstrap core JavaScript-->
+      <script src="../assets/vendor/jquery/jquery.min.js"></script>
+      <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="../assets/js/jquery.min.js"></script>
+      <script type="text/javascript" src="../assets/js/jquery.bs4-scrolling-tabs.js"></script>
+      <!-- Custom scripts for all pages-->
+      <script src="../assets/js/homly.js"></script>
+  
+    
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Homly">
+
+    <title>Homly - Admin Dashboard</title>
+
+    <!-- Custom fonts for homly-->
+    <link href="../assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    
+    <!-- Custom styles for homly-->
+    <link href="../assets/css/homly.css" rel="stylesheet">
+    <link href="../assets/css/jquery.bs4-scrolling-tabs.css" rel="stylesheet">
+</head>
+
+<body id="page-top" class="sidebar-toggled">
+    <div id="body"> 
+  
+        <div id="chat-circle" class="btn btn-raised">
+                <div id="chat-overlay"></div>
+                    <img src="../assets/img/support.png" >
+            </div>
+          
+          <div class="chat-box">
+            <div class="chat-box-header">
+              Menuel
+              <span class="chat-box-toggle"><i class="material-icons">x</i></span>
+            </div>
+            <div class="chat-box-body">
+              <div class="chat-box-overlay">   
+              </div>
+              <div class="chat-logs">
+               
+              </div><!--chat-log -->
+            </div>
+            <div class="chat-input">      
+              <form>
+                <input type="text" id="chat-input" placeholder="Send a message..."/>
+              <button type="submit" class="chat-submit" id="chat-submit"><i class="material-icons">send</i></button>
+              </form>      
+            </div>
+          </div>
+          
+          
+          
+          
+        </div>
+    <!-- Page Wrapper -->
+    <div id="wrapper" class="pages">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav  sidebar sidebar-dark accordion toggled" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-lg-flex align-items-center justify-content-center d-none d-lg-block" href="index.html">
+                <div class="sidebar-brand-icon">
+                    <i class="logo"></i>
+                </div>
+            </a>
+
+          
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item ">
+                <a class="nav-link" href="index.html">
+                    <i><img src="../assets/img/menu/dashboard.png"/><img src="../assets/img/menu/dashboard-active.png"/></i>
+                    <span>Dashboard</span>
+                    </a>
+            </li>
+              <!-- Nav Item - Administrator -->
+              <li class="nav-item ">
+                <a class="nav-link" href="profile.html">
+                    <i><img src="../assets/img/menu/administrator.png"/><img src="../assets/img/menu/administrator-active.png"/></i>
+                    <span>Administrator</span>
+                    </a>
+            </li>
+              <!-- Nav Item - Analytics -->
+              <li class="nav-item">
+                <a class="nav-link" href="analytics.html">
+                    <i><img src="../assets/img/menu/web-t.png"/><img src="../assets/img/menu/web-t-active.png"/></i>
+                    <span>Analytics</span>
+                    </a>
+            </li>
+             <!-- Nav Item - Mail -->
+             <li class="nav-item active">
+                <a class="nav-link" href="Mail.html">
+                    <i><img src="../assets/img/menu/mailbox.png"/><img src="../assets/img/menu/mailbox-active.png"/></i>
+                    <span>Mail</span>
+                    </a>
+            </li>
+             <!-- Nav Item - calendar -->
+             <li class="nav-item">
+                <a class="nav-link" href="calendar.html">
+                    <i><img src="../assets/img/menu/calendar.png"/><img src="../assets/img/menu/calendar-active.png"/></i>
+                    <span>Calendar</span>
+                    </a>
+            </li>
+        </li>
+        <!-- Nav Item - project-management -->
+        <li class="nav-item">
+           <a class="nav-link" href="project-management.html">
+               <i><img src="../assets/img/menu/project-management.png"/><img src="../assets/img/menu/project-management-active.png"/></i>
+               <span>Project Management</span>
+               </a>
+       </li>
+            
+             <!-- Nav Item - Chat -->
+             <li class="nav-item">
+                <a class="nav-link" href="chat.html">
+                    <i><img src="../assets/img/menu/chat.png"/><img src="../assets/img/menu/chat-active.png"/></i>
+                    <span>chat</span>
+                    </a>
+            </li>
+             <!-- Nav Item - clients -->
+             <li class="nav-item">
+                <a class="nav-link" href="client.html">
+                    <i><img src="../assets/img/menu/clients.png"/><img src="../assets/img/menu/clients-active.png"/></i>
+                    <span>Clients</span>
+                    </a>
+            </li>
+             <!-- Nav Item - property -->
+             <li class="nav-item">
+                <a class="nav-link" href="propertydashboard.html">
+                    <i><img src="../assets/img/menu/property.png"/><img src="../assets/img/menu/property-active.png"/></i>
+                    <span>Property</span>
+                    </a>
+            </li>
+             <!-- Nav Item - appointments -->
+             <li class="nav-item">
+                <a class="nav-link" href="appointments.html">
+                    <i><img src="../assets/img/menu/appointments.png"/><img src="../assets/img/menu/appointments-active.png"/></i>
+                    <span>Appointments</span>
+                    </a>
+            </li>
+            <!-- Nav Item - Store -->
+            <li class="nav-item">
+                <a class="nav-link" href="store.html">
+                    <i><img src="../assets/img/menu/store.png"/><img src="../assets/img/menu/store-active.png"/></i>
+                    <span>Store</span>
+                    </a>
+            </li>
+            
+
+           
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light  topbar mb-4 mb-sm-0 static-top ">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button class="btn btn-link mobile-logo  align-items-center rounded-circle mr-3  d-none ">
+                        <i class="logo"></i> <img src="../assets/img/homly 1.svg">
+                    </button>
+                   
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                            <li class="nav-item  mx-1 d-none "><a href="#" class="play-vidoes nav-link"><span>Please vidores </span> <img src="../assets/img/play-close-anim.svg"/></a></li>
+                            <li class="nav-item "><a class="nav-link day-night-theme" id="daynight"><i class="far fa-moon"></i></a> </li>
+                        <!-- Nav Item - Alerts -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="far fa-bell"></i>
+                                <!-- Counter - Alerts -->
+                                <span class="badge badge-danger badge-counter">3+</span>
+                            </a>
+                            <!-- Dropdown - Alerts -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header">
+                                    Alerts Center
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-primary">
+                                            <i class="fas fa-file-alt text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 12, 2019</div>
+                                        <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-success">
+                                            <i class="fas fa-donate text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 7, 2019</div>
+                                        $290.29 has been deposited into your account!
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-warning">
+                                            <i class="fas fa-exclamation-triangle text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 2, 2019</div>
+                                        Spending Alert: We've noticed unusually high spending for your account.
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                            </div>
+                        </li>
+
+                      
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Inori Amane</span>
+                               <span class="Profile_pic"><img class="img-profile rounded-circle"
+                                    src="../assets/img/undraw_profile.svg"></span> 
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="profile.html">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Profile
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Settings
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Activity Log
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Logout
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+
+                <!-- Begin Page Content -->
+                <div class=" container-mailbox">
+                <div class="pages-inner-mailbox">
+              
+                            <div class="page-new">
+                                   <div class="">
+                                     
+        <section class="inbox-section">
+            <div class=" container-mailbox">
+
+                <div class="mail-bx">
+                    <div class="row ml-0 mr-0">
+                        <div class="col-xs-12 col-md-3 col-lg-2 p-0 border-left desktop-show">
+                            <div class="mailbox-left">
+                                <div class="top-hedding"><i class="fa fa-inbox" aria-hidden="true"></i> Mailbox</div>
+                                <div class="compose-message">
+                                    <a id="compose-message" href="#" class="btn btn-primary"><i class="fa fa-pencil" aria-hidden="true"></i>Compose Message</a>
+                                </div>
+
+                                <div class="inbox-option">
+                                    <ul>
+                                        <li><a href="#" class=""><i class="fa fa-send-o" aria-hidden="true"></i>Inbox <span class="badge badge-primary">1</span></a></li>
+                                        <li><a href="#" class=""><i class="fa fa-pencil" aria-hidden="true"></i>Drafts</a></li>
+                                        <li><a href="#" class=""><i class="fa fa-trash-o" aria-hidden="true"></i>Trash</a></li>
+                                        <li><a href="#" class=""><i class="fa fa-square-o" aria-hidden="true"></i>Junk</a></li>
+                                        <li><a href="#" class=""><i class="fa fa-send-o" aria-hidden="true"></i>Sent</a></li>
+                                    </ul>
+
+                                </div>
+
+                                <div class="mail-service">
+                                    <div class="menu-wrapper helpvideosection">
+                                        <div class="scrollmenudiv">
+                                    <ul class="nav nav-tabs vidoe_tabs ">
+                                        <li class="nav-item"><a data-url="../assets/vedio/openHouse-min.mp4" class="nav-link">On Demand Open House</a></li>
+                                        <li class="nav-item"><a data-url="../assets/vedio/smarthome-min.mp4" class="nav-link">Smart Home Controls</a></li>
+                                        <li class="nav-item"><a data-url="../assets/vedio/propertyPortal-min.mp4" class="nav-link">Property Portal</a></li>
+                                        <li class="nav-item"><a data-url="../assets/vedio/auction-min.mp4" class="nav-link">Multi-Stage Auction</a></li>
+                                        <li class="nav-item"><a data-url="../assets/vedio/submittalTool-min.mp4" class="nav-link">Offer Submittal Tool</a></li>
+                                        <li class="nav-item"><a data-url="../assets/vedio/openComms-min.mp4" class="nav-link">Open Communication</a></li>
+                                        <li class="nav-item"><a data-url="../assets/vedio/fullService-min.mp4" class="nav-link">Full Service</a></li>
+                                        <li class="nav-item"><a data-url="../assets/vedio/autoIntelligence-min.mp4" class="nav-link">Automated Intelligence</a></li>
+                                        <li class="nav-item"><a data-url="../assets/vedio/homeRehab-min.mp4" class="nav-link">Home Rehab Service</a></li>
+                                    </ul>
+                                 
+                                    </div>
+    
+                                    <video id="myhelpvideo" controls poster="../assets/img/instructional-video-player.png">
+                                        <source src="../assets/vedio/openHouse-min.mp4" type="video/mp4">
+                                    </video>
+    
+                                </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <!-- Button trigger modal -->
+
+
+
+
+
+
+
+                        <div class="col-xs-12 col-md-4 col-lg-3 p-0 border-left mobile-show">
+                            <div class="mail-search-bar">
+                                <div class="mail-search-box">
+                                    <span><i class="fa fa-search" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" placeholder="Search" value="">
+
+                                </div>
+                                <div class="mail-listing-option">
+                                    <div class="mail-list-icon desktop-show"><a href="#"><img src="../assets/img/list-icon.png" alt="image"></a></div>
+                                    <div class="mail-list-icon mobile-show"><a href="#" data-toggle="modal" data-target="#listModal"><img src="../assets/img/list-icon.png" alt="image"></a></div>
+                                    <div class="mail-refresh-icon"><a href="#"><img src="../assets/img/refresh-icon.png" alt="image"></a></div>
+
+                                </div>
+                            </div>
+                            <div class="mail-list-bar">
+
+                                <div class="mail-list-day ftdrop1">Today</div>
+
+                                <div class="mail-listing-latest ftblock1">
+                                    <div class="mail-listing-bx mail-listing-active">
+                                        <a href="#" data-toggle="modal" data-target="#exampleModal">
+                                            <div class="mail-listing-img">
+                                                <img src="../assets/img/client-img.png" alt="image">
+                                            </div>
+                                            <div class="mail-listing-names">
+                                                <h3>Contact@mailgx.com</h3>
+                                                <p>New appointment request for 3921 Park Ch...</p>
+                                                <div class="mail-time">11:23</div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+
+                                    <div class="mail-listing-bx">
+                                        <a href="#">
+                                            <div class="mail-listing-img">
+                                                <img src="../assets/img/client-img.png" alt="image">
+                                            </div>
+                                            <div class="mail-listing-names">
+                                                <h3>Contact@mailgx.com</h3>
+                                                <p>New appointment request for 3921 Park Ch...</p>
+                                                <div class="mail-time">11:23</div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="mail-listing-bx">
+                                        <a href="#">
+                                            <div class="mail-listing-img">
+                                                <img src="../assets/img/client-img.png" alt="image">
+                                            </div>
+                                            <div class="mail-listing-names">
+                                                <h3>Contact@mailgx.com</h3>
+                                                <p>New appointment request for 3921 Park Ch...</p>
+                                                <div class="mail-time">11:23</div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="mail-listing-bx">
+                                        <a href="#">
+                                            <div class="mail-listing-img">
+                                                <img src="../assets/img/client-img.png" alt="image">
+                                            </div>
+                                            <div class="mail-listing-names">
+                                                <h3>Contact@mailgx.com</h3>
+                                                <p>New appointment request for 3921 Park Ch...</p>
+                                                <div class="mail-time">11:23</div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="mail-listing-bx">
+                                        <a href="#">
+                                            <div class="mail-listing-img">
+                                                <img src="../assets/img/client-img.png" alt="image">
+                                            </div>
+                                            <div class="mail-listing-names">
+                                                <h3>Contact@mailgx.com</h3>
+                                                <p>New appointment request for 3921 Park Ch...</p>
+                                                <div class="mail-time">11:23</div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+
+
+
+                                </div>
+
+
+
+
+                                <div class="mail-list-day ftdrop2">This week</div>
+
+                                <div class="mail-listing-latest ftblock2">
+                                    <div class="mail-listing-bx">
+                                        <a href="#">
+                                            <div class="mail-listing-img">
+                                                <img src="../assets/img/client-img.png" alt="image">
+                                            </div>
+                                            <div class="mail-listing-names">
+                                                <h3>Contact@mailgx.com</h3>
+                                                <p>New appointment request for 3921 Park Ch...</p>
+                                                <div class="mail-time">11:23</div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+
+                                    <div class="mail-listing-bx">
+                                        <a href="#">
+                                            <div class="mail-listing-img">
+                                                <img src="../assets/img/client-img.png" alt="image">
+                                            </div>
+                                            <div class="mail-listing-names">
+                                                <h3>Contact@mailgx.com</h3>
+                                                <p>New appointment request for 3921 Park Ch...</p>
+                                                <div class="mail-time">11:23</div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="mail-listing-bx">
+                                        <a href="#">
+                                            <div class="mail-listing-img">
+                                                <img src="../assets/img/client-img.png" alt="image">
+                                            </div>
+                                            <div class="mail-listing-names">
+                                                <h3>Contact@mailgx.com</h3>
+                                                <p>New appointment request for 3921 Park Ch...</p>
+                                                <div class="mail-time">11:23</div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="mail-listing-bx">
+                                        <div class="mail-listing-img">
+                                            <img src="../assets/img/client-img.png" alt="image">
+                                        </div>
+                                        <div class="mail-listing-names">
+                                            <h3>Contact@mailgx.com</h3>
+                                            <p>New appointment request for 3921 Park Ch...</p>
+                                            <div class="mail-time">11:23</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mail-listing-bx">
+                                        <a href="#">
+                                            <div class="mail-listing-img">
+                                                <img src="../assets/img/client-img.png" alt="image">
+                                            </div>
+                                            <div class="mail-listing-names">
+                                                <h3>Contact@mailgx.com</h3>
+                                                <p>New appointment request for 3921 Park Ch...</p>
+                                                <div class="mail-time">11:23</div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+
+
+
+                                </div>
+
+
+
+
+
+
+
+
+
+                            </div>
+
+
+                        </div>
+                        <div class="col-xs-12 col-md-4 col-lg-10 p-0 border-left desktop-show list-contactmail">
+                            <div class="mail-search-bar">
+                                <div class="mail-search-box">
+                                    <span><i class="fa fa-search" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" placeholder="Search" value="">
+
+                                </div>
+                                <div class="mail-listing-option">
+                                    <div class="mail-list-icon"><a href="#"><img src="../assets/img/list-icon.png" alt="image"></a></div>
+                                    <div class="mail-refresh-icon"><a href="#"><img src="../assets/img/refresh-icon.png" alt="image"></a></div>
+
+                                </div>
+                            </div>
+                            <div class="mail-list-bar">
+
+                                <div class="mail-list-day ftdrop1">Today</div>
+
+                                <div class="mail-listing-latest ftblock1">
+                                    <div class="mail-listing-bx mail-listing-active">
+                                        <a href="#">
+                                            <div class="mail-listing-img">
+                                                <img src="../assets/img/client-img.png" alt="image">
+                                            </div>
+                                            <div class="mail-listing-names">
+                                                <h3>Contact@mailgx.com</h3>
+                                                <p>New appointment request for 3921 Park Ch...</p>
+                                                <div class="mail-time">11:23</div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+
+                                    <div class="mail-listing-bx">
+                                        <a href="#">
+                                            <div class="mail-listing-img">
+                                                <img src="../assets/img/client-img.png" alt="image">
+                                            </div>
+                                            <div class="mail-listing-names">
+                                                <h3>Contact@mailgx.com</h3>
+                                                <p>New appointment request for 3921 Park Ch...</p>
+                                                <div class="mail-time">11:23</div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="mail-listing-bx">
+                                        <a href="#">
+                                            <div class="mail-listing-img">
+                                                <img src="../assets/img/client-img.png" alt="image">
+                                            </div>
+                                            <div class="mail-listing-names">
+                                                <h3>Contact@mailgx.com</h3>
+                                                <p>New appointment request for 3921 Park Ch...</p>
+                                                <div class="mail-time">11:23</div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="mail-listing-bx">
+                                        <a href="#">
+                                            <div class="mail-listing-img">
+                                                <img src="../assets/img/client-img.png" alt="image">
+                                            </div>
+                                            <div class="mail-listing-names">
+                                                <h3>Contact@mailgx.com</h3>
+                                                <p>New appointment request for 3921 Park Ch...</p>
+                                                <div class="mail-time">11:23</div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="mail-listing-bx">
+                                        <a href="#">
+                                            <div class="mail-listing-img">
+                                                <img src="../assets/img/client-img.png" alt="image">
+                                            </div>
+                                            <div class="mail-listing-names">
+                                                <h3>Contact@mailgx.com</h3>
+                                                <p>New appointment request for 3921 Park Ch...</p>
+                                                <div class="mail-time">11:23</div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+
+
+
+                                </div>
+
+
+
+
+                                <div class="mail-list-day ftdrop2">This week</div>
+
+                                <div class="mail-listing-latest ftblock2">
+                                    <div class="mail-listing-bx">
+                                        <a href="#">
+                                            <div class="mail-listing-img">
+                                                <img src="../assets/img/client-img.png" alt="image">
+                                            </div>
+                                            <div class="mail-listing-names">
+                                                <h3>Contact@mailgx.com</h3>
+                                                <p>New appointment request for 3921 Park Ch...</p>
+                                                <div class="mail-time">11:23</div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+
+                                    <div class="mail-listing-bx">
+                                        <a href="#">
+                                            <div class="mail-listing-img">
+                                                <img src="../assets/img/client-img.png" alt="image">
+                                            </div>
+                                            <div class="mail-listing-names">
+                                                <h3>Contact@mailgx.com</h3>
+                                                <p>New appointment request for 3921 Park Ch...</p>
+                                                <div class="mail-time">11:23</div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="mail-listing-bx">
+                                        <a href="#">
+                                            <div class="mail-listing-img">
+                                                <img src="../assets/img/client-img.png" alt="image">
+                                            </div>
+                                            <div class="mail-listing-names">
+                                                <h3>Contact@mailgx.com</h3>
+                                                <p>New appointment request for 3921 Park Ch...</p>
+                                                <div class="mail-time">11:23</div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="mail-listing-bx">
+                                        <div class="mail-listing-img">
+                                            <img src="../assets/img/client-img.png" alt="image">
+                                        </div>
+                                        <div class="mail-listing-names">
+                                            <h3>Contact@mailgx.com</h3>
+                                            <p>New appointment request for 3921 Park Ch...</p>
+                                            <div class="mail-time">11:23</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mail-listing-bx">
+                                        <a href="#">
+                                            <div class="mail-listing-img">
+                                                <img src="../assets/img/client-img.png" alt="image">
+                                            </div>
+                                            <div class="mail-listing-names">
+                                                <h3>Contact@mailgx.com</h3>
+                                                <p>New appointment request for 3921 Park Ch...</p>
+                                                <div class="mail-time">11:23</div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+
+
+
+                                </div>
+
+
+
+
+
+
+
+
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <div class="col-xs-12 col-md-4 col-lg-7 p-0 border-left border-right desktop-show list-contact-dtails">
+                            <div class="message-inbox">
+                                <div class="message-inbox-top-bar">
+                                    <a href="#"><img src="../assets/img/mail-icon-1.png" alt="image"></a>
+                                    <a href="#"><img src="../assets/img/mail-icon-2.png" alt="image"></a>
+                                    <a href="#"><img src="../assets/img/mail-icon-3.png" alt="image"></a>
+                                    <a href="#"><img src="../assets/img/mail-icon-4.png" alt="image"></a>
+
+                                </div>
+
+                                <div class="message-inbox-title-bar">
+                                    <h2>New appointment request for 3921 Park Charles CT, San Jose</h2>
+                                    <span>11:23 | 22/11/2018</span>
+                                </div>
+
+
+                                <div class="message-inbox-description-bar">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                    <p>Tortor, ipsum adipiscing convallis tellus urna, purus, nulla. Pellentesque dui sed viverra aliquam arcu. Vel aliquet tincidunt sed morbi. 
+                                        Potenti morbi massa luctus enim amet vitae. Adipiscing feugiat consectetur pharetra tempus, lorem nascetur. Morbi faucibus risus leo cras lorem maecenas tellus. 
+                                        Vitae volutpat pharetra porttitor mi purus in odio nulla morbi. Molestie ut penatibus risus, tempus accumsan, habitant bibendum est. Neque et, vitae aliquet sociis dui. 
+                                        Arcu enim lacus amet, curabitur nunc, mi id. Ultricies aliquam id tempor blandit. Sed sed nulla commodo posuere sit in facilisis fermentum. Et ornare facilisis quis 
+                                        elementum luctus sollicitudin. Consectetur sem integer nunc felis sem tincidunt ut vulputate quis.</p>
+                                    <p>Proin nunc risus, tincidunt purus faucibus ut et tellus. Elit pretium libero sodales molestie praesent. Nisl neque interdum in in. 
+                                        Quam molestie arcu faucibus diam mauris morbi sapien magnis. Varius nullam ipsum, in morbi velit mauris.</p>
+                                    <p>Eget tortor auctor justo venenatis.</p>
+
+                                    <div class="message-attachments-img">
+                                        <h5>2 Attachments</h5>
+                                        <div class="attachments-img">
+                                            <img src="../assets/img/properti-img.png" alt="image">
+                                        </div>
+                                        <div class="attachments-img">
+                                            <img src="../assets/img/properti-img2.png" alt="image">
+                                        </div>
+                                    </div>
+
+                                    <div class="message-reply-box">
+                                        <div class="form-group">
+                                            <textarea name="editor1" id="editor1">              
+    <p>sample text<span></span></p>
+                                            </textarea>
+                                        </div>
+
+                                        <div class="attachments-edt-bx">
+                                            <div class="attachments-doc">
+                                                <img src="../assets/img/attachments-icon.png" alt="icon">
+                                                <input type="file" class="form-control" placeholder="">
+                                            </div>
+
+                                            <div class="attachments-doc">
+                                                <img src="../assets/img/image-attachments-icon.png" alt="icon">
+                                                <input type="file" class="form-control" placeholder="">
+                                            </div>
+
+                                            <div class="attachments-lock">
+                                                <img src="../assets/img/lock-icon.png" alt="icon">
+                                            </div>
+
+                                            <div class="attachments-btns">
+                                                <a href="#"><img src="../assets/img/mail-icon-4.png" alt="image"></a>
+                                                <a href="#" class="btn btn-primary">Send Reply</a>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <!---------------Mobile--------------------->
+                        <div class="modal fade mailbox-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+
+                                    <div class="modal-body">
+                                        <div class="col-xs-12 col-md-4 col-lg-6 p-0 border-left border-right">
+                                            <div class="message-inbox">
+                                                <div class="message-inbox-top-bar">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    <a href="#"><img src="../assets/img/mail-icon-1.png" alt="image"></a>
+                                                    <a href="#"><img src="../assets/img/mail-icon-2.png" alt="image"></a>
+                                                    <a href="#"><img src="../assets/img/mail-icon-3.png" alt="image"></a>
+                                                    <a href="#"><img src="../assets/img/mail-icon-4.png" alt="image"></a>
+
+                                                </div>
+
+                                                <div class="message-inbox-title-bar">
+                                                    <h2>New appointment request for 3921 Park Charles CT, San Jose</h2>
+                                                    <span>11:23 | 22/11/2018</span>
+                                                </div>
+
+
+                                                <div class="message-inbox-description-bar">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                                    <p>Tortor, ipsum adipiscing convallis tellus urna, purus, nulla. Pellentesque dui sed viverra aliquam arcu. Vel aliquet tincidunt sed morbi. 
+                                                        Potenti morbi massa luctus enim amet vitae. Adipiscing feugiat consectetur pharetra tempus, lorem nascetur. Morbi faucibus risus leo cras lorem maecenas tellus. 
+                                                        Vitae volutpat pharetra porttitor mi purus in odio nulla morbi. Molestie ut penatibus risus, tempus accumsan, habitant bibendum est. Neque et, vitae aliquet sociis dui. 
+                                                        Arcu enim lacus amet, curabitur nunc, mi id. Ultricies aliquam id tempor blandit. Sed sed nulla commodo posuere sit in facilisis fermentum. Et ornare facilisis quis 
+                                                        elementum luctus sollicitudin. Consectetur sem integer nunc felis sem tincidunt ut vulputate quis.</p>
+                                                    <p>Proin nunc risus, tincidunt purus faucibus ut et tellus. Elit pretium libero sodales molestie praesent. Nisl neque interdum in in. 
+                                                        Quam molestie arcu faucibus diam mauris morbi sapien magnis. Varius nullam ipsum, in morbi velit mauris.</p>
+                                                    <p>Eget tortor auctor justo venenatis.</p>
+
+                                                    <div class="message-attachments-img">
+                                                        <h5>2 Attachments</h5>
+                                                        <div class="attachments-img">
+                                                            <img src="../assets/img/properti-img.png" alt="image">
+                                                        </div>
+                                                        <div class="attachments-img">
+                                                            <img src="../assets/img/properti-img2.png" alt="image">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="message-reply-box">
+                                                        <div class="form-group">
+                                            <textarea name="editor3" id="editor3">              
+    <p>sample text<span></span></p>
+                                            </textarea>
+                                        </div>
+
+                                                        <div class="attachments-edt-bx">
+                                                            <div class="attachments-doc">
+                                                                <img src="../assets/img/attachments-icon.png" alt="icon">
+                                                                <input type="file" class="form-control" placeholder="">
+                                                            </div>
+
+                                                            <div class="attachments-doc">
+                                                                <img src="../assets/img/image-attachments-icon.png" alt="icon">
+                                                                <input type="file" class="form-control" placeholder="">
+                                                            </div>
+
+                                                            <div class="attachments-lock">
+                                                                <img src="../assets/img/lock-icon.png" alt="icon">
+                                                            </div>
+
+                                                            <div class="attachments-btns">
+                                                                <a href="#"><img src="../assets/img/mail-icon-4.png" alt="image"></a>
+                                                                <a href="#" class="btn btn-primary">Send Reply</a>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade mailbox-modal" id="listModal" tabindex="-1" aria-labelledby="listModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+
+                                    <div class="modal-body">
+                                        <div class="col-xs-12 col-md-4 col-lg-3 p-0 border-left">
+                                            <div class="mailbox-left">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <div class="top-hedding"><i class="fa fa-inbox" aria-hidden="true"></i> Mailbox</div>
+                                                <div class="compose-message">
+                                                    <a id="compose-message-mobile" href="#" class="btn btn-primary"><i class="fa fa-pencil" aria-hidden="true"></i>Compose Message</a>
+                                                </div>
+
+                                                <div class="inbox-option">
+                                                    <ul>
+                                                        <li><a href="#" class=""><i class="fa fa-send-o" aria-hidden="true"></i>Inbox <span class="badge badge-primary">1</span></a></li>
+                                                        <li><a href="#" class=""><i class="fa fa-pencil" aria-hidden="true"></i>Drafts</a></li>
+                                                        <li><a href="#" class=""><i class="fa fa-trash-o" aria-hidden="true"></i>Trash</a></li>
+                                                        <li><a href="#" class=""><i class="fa fa-square-o" aria-hidden="true"></i>Junk</a></li>
+                                                        <li><a href="#" class=""><i class="fa fa-send-o" aria-hidden="true"></i>Sent</a></li>
+                                                    </ul>
+
+                                                </div>
+
+                                                <div class="mail-service">
+                                                    <div class="mail-service-tab">
+                                                        <a href="#">Full Service</a>
+                                                        <a href="#">Automated Intelligence</a>
+                                                        <a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                                    </div>
+                                                    <div class="mail-service-video">
+                                                        <img class="card-img-top" src="../assets/img/start-img.png" alt="Card image cap">
+                                                        <div class="start-videos">
+                                                            <i><img src="../assets/img/video-play-icon.png" alt="image"></i>
+                                                            <span>Start Here</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="compose-message-bx">
+                            <div class="compose-message-title-bar">
+                                <h3>New Message</h3>
+                                <button id="close-btn" type="button" class="close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+
+                            <div class="ompose-message-form">
+                                <form>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Email">
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="Subject">
+                                    </div>
+                                    <div class="input-group mb-3">
+                                            <textarea name="editor2" id="editor2">              
+                                                    <p>sample text<span></span></p>
+                                                                                            </textarea>
+                                    </div>
+
+                                    <div class="input-group-button">
+                                        <a href="#" class="btn btn-primary">Send</a>
+                                        <div class="attachments-doc">
+                                            <img src="../assets/img/attachments-icon.png" alt="icon">
+                                            <input type="file" class="form-control" placeholder="">
+                                        </div>
+
+                                        <div class="attachments-doc">
+                                            <img src="../assets/img/image-attachments-icon.png" alt="icon">
+                                            <input type="file" class="form-control" placeholder="">
+                                        </div>
+                                        <div class="attachments-btns">
+                                            <a href="#"><img src="../assets/img/mail-icon-4.png" alt="image"></a>
+                                        </div>
+
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+                </div>
+                  
+                    </div>
+                </div>
+                
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+          
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="../login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     
+
+
+
+  
+      <!-- Bootstrap core JavaScript-->
+      <script src="../assets/vendor/jquery/jquery.min.js"></script>
+      <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="../assets/js/jquery.min.js"></script>
+      <script type="text/javascript" src="../assets/js/jquery.bs4-scrolling-tabs.js"></script>
+      <!-- Custom scripts for all pages-->
+      <script src="../assets/js/homly.js"></script>
+  
+      <script src='https://cdn.ckeditor.com/4.7.2/basic/ckeditor.js'></script>
+      <script type="text/javascript">
+          $(document).ready(function () {
+              $('.ftdrop1').click(function () {
+                  if ($('.ftdrop1').hasClass('ftopen1')) {
+                      $('.ftdrop1').removeClass('ftopen1');
+                  } else {
+                      $('.ftdrop1').addClass('ftopen1');
+                  }
+                  $(".ftblock1").slideToggle();
+              });
+              $('.ftdrop2').click(function () {
+                  if ($('.ftdrop2').hasClass('ftopen2')) {
+                      $('.ftdrop2').removeClass('ftopen2');
+                  } else {
+                      $('.ftdrop2').addClass('ftopen2');
+                  }
+                  $(".ftblock2").slideToggle();
+              });
+              $('.ftdrop3').click(function () {
+                  if ($('.ftdrop3').hasClass('ftopen3')) {
+                      $('.ftdrop3').removeClass('ftopen3');
+                  } else {
+                      $('.ftdrop3').addClass('ftopen3');
+                  }
+                  $(".ftblock3").slideToggle();
+              });
+          });</script>
+
+      <script>
+          var editor = CKEDITOR.replace('editor1', {
+          toolbarLocation: 'bottom',
+          });
+          var editor = CKEDITOR.replace('editor2', {
+          toolbarLocation: 'bottom',
+          });
+
+          CKEDITOR.on('dialogDefinition', function (ev) {
+              var dialogName = ev.data.name;
+              var dialogDefinition = ev.data.definition;
+
+              if (dialogName == 'link') {
+
+                  //Get info tab 
+                  var infoTab = dialogDefinition.getContents('info');
+
+                  // Add button for creating custom content
+                  infoTab.add({
+                      type: 'button',
+                      id: 'buttonId',
+                      label: 'Click to add',
+                      title: 'Append Input Field',
+                      onClick: function () {
+
+                          var paragraph = new CKEDITOR.dom.element('p');
+                          paragraph.setStyle('margin-top', '5px');
+                          var inputField = new CKEDITOR.dom.element('input');
+                          inputField.addClass('cke_dialog_ui_input_text');
+                          inputField.setAttribute('id', Math.floor((Math.random() * 1000) + 1));
+                          inputField.setAttribute('maxLength', 20);
+                          paragraph.append(inputField);
+
+                          CKEDITOR.document.getById('dynamicContent').append(paragraph);
+                      }
+                  });
+
+                  // Add HTML container for dynamic content
+                  infoTab.add({
+                      id: 'abc',
+                      type: 'html',
+                      html: '<div id="dynamicContent"></div>',
+                      setup: function (selectedTable) {
+                          alert('setup called');
+                      },
+                      commit: function (data) {
+                          alert('commit called');
+                      }
+                  });
+
+                  //Remove Custom Fields
+                  var oldOnHide = dialogDefinition.onHide;
+                  dialogDefinition.onHide = function () {
+                      CKEDITOR.document.getById('dynamicContent').setHtml('');
+                      if (oldOnHide)
+                          oldOnHide.apply(this);
+                  };
+
+                  //Commit can also be called from code
+                  setTimeout(function () {
+                      dialogDefinition.dialog.commitContent('test');
+                  }, 3000);
+              }
+          });
+      </script>
+      
+      
+      
+       <script>
+          var editor = CKEDITOR.replace('editor3', {
+          toolbarLocation: 'bottom',
+          });
+
+          CKEDITOR.on('dialogDefinition', function (ev) {
+              var dialogName = ev.data.name;
+              var dialogDefinition = ev.data.definition;
+
+              if (dialogName == 'link') {
+
+                  //Get info tab 
+                  var infoTab = dialogDefinition.getContents('info');
+
+                  // Add button for creating custom content
+                  infoTab.add({
+                      type: 'button',
+                      id: 'buttonId',
+                      label: 'Click to add',
+                      title: 'Append Input Field',
+                      
+                      onClick: function () {
+
+                          var paragraph = new CKEDITOR.dom.element('p');
+                          paragraph.setStyle('margin-top', '5px');
+                          var inputField = new CKEDITOR.dom.element('input');
+                          inputField.addClass('cke_dialog_ui_input_text');
+                          inputField.setAttribute('id', Math.floor((Math.random() * 1000) + 1));
+                          inputField.setAttribute('maxLength', 20);
+                          paragraph.append(inputField);
+
+                          CKEDITOR.document.getById('dynamicContent').append(paragraph);
+                      }
+                  });
+
+                  // Add HTML container for dynamic content
+                  infoTab.add({
+                      id: 'abc',
+                      type: 'html',
+                      html: '<div id="dynamicContent"></div>',
+                      setup: function (selectedTable) {
+                          alert('setup called');
+                      },
+                      commit: function (data) {
+                          alert('commit called');
+                      }
+                  });
+
+                  //Remove Custom Fields
+                  var oldOnHide = dialogDefinition.onHide;
+                  dialogDefinition.onHide = function () {
+                      CKEDITOR.document.getById('dynamicContent').setHtml('');
+                      if (oldOnHide)
+                          oldOnHide.apply(this);
+                  };
+
+                  //Commit can also be called from code
+                  setTimeout(function () {
+                      dialogDefinition.dialog.commitContent('test');
+                  }, 3000);
+              }
+          });
+      </script>
+
+      <script>
+          $(document).ready(function () {
+
+
+            $(".list-contact-dtails").hide();
+              $("#compose-message").click(function () {
+                  $(".compose-message-bx").addClass("compose-message-show");
+              });
+
+              $("#close-btn").click(function () {
+                  $(".compose-message-bx").removeClass("compose-message-show");
+              });
+
+
+              $("#compose-message-mobile").click(function () {
+                  $(".compose-message-bx").addClass("compose-message-show");
+              });
+              $("#compose-message-mobile").click(function () {
+                  $(".compose-message-bx").addClass("compose-message-show");
+              });
+
+              $("#close-btn").click(function () {
+                  $(".compose-message-bx").removeClass("compose-message-show");
+              });
+              $(".mail-listing-bx").click(function () {
+                $(".mail-listing-bx").removeClass("mail-listing-active");
+                $(this).addClass("mail-listing-active");
+                $(".list-contactmail").removeClass("col-xs-12 col-md-4 col-lg-10 p-0 border-left desktop-show");
+                $(".list-contactmail").addClass("col-xs-12 col-md-4 col-lg-3 p-0 border-left desktop-show");
+                $(".list-contact-dtails").show();
+                
+              });
+          });
+
+          </script>
+
+</body>
+
+</html>
